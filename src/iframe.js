@@ -21,12 +21,11 @@ export class ZwcIframe extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            title: 'IFrame-new',
+            controlName: 'IFrame-new',
             fallbackDisableSubmit: false,
             description: 'IFrame component which can render url view with the frame',
-            iconUrl: 'https://designsystem.nintextest.com/icons/rich-text.svg',
+            iconUrl: "one-line-text",
             groupName: 'Visual',
-            pluginAuthor: 'John Citizen',
             version: '1.3',
             properties: {
                 src: {
