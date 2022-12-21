@@ -1,10 +1,36 @@
-import { LitElement, css, html } from 'lit';
+import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit-html/directives/style-map.js';
+import { NintexPlugin } from '../../lib/nintex-plugin';
 
 @customElement('zwc-iframe')
 export class ZwcIframe extends LitElement {
-  static getMetaConfig() {
+  // Define scoped styles right with your component, in plain CSS
+  static styles = css`
+    :host {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+
+    .frame {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+    }
+  `;
+  @property()
+  name: string = 'Hello';
+  @property()
+  title: string = 'Hello';
+  @property()
+  src: string = 'https://stackoverflow.com/';
+  @property({ type: Number })
+  height: number = 500;
+
+  static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
     // plugin contract information
     return {
       controlName: 'IFrame-new',
@@ -34,34 +60,6 @@ export class ZwcIframe extends LitElement {
     };
   }
 
-  // Define scoped styles right with your component, in plain CSS
-  static styles = css`
-    :host {
-      height: 100%;
-      width: 100%;
-      display: block;
-    }
-    .frame {
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      background-color: transparent;
-      border: none;
-    }
-  `;
-
-  @property()
-  name: string = 'Hello';
-
-  @property()
-  title: string = 'Hello';
-
-  @property()
-  src: string = 'https://stackoverflow.com/';
-
-  @property({ type: Number })
-  height: number = 500;
-
   // Render the UI as a function of component state
   render() {
     console.log('Props', {
@@ -73,7 +71,7 @@ export class ZwcIframe extends LitElement {
 
     let styles = { height: this.height + 'px' };
 
-    return html`<iframe
+    return html` <iframe
       class="frame"
       style=${styleMap(styles)}
       .name=${this.name}

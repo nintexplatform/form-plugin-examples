@@ -1,6 +1,7 @@
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import '@material/mwc-textfield/mwc-textfield.js';
+import { NintexPlugin } from '../../lib/nintex-plugin';
 
 const fire = <T>(
   element: HTMLElement,
@@ -47,7 +48,7 @@ export class ZwcTextfield extends LitElement {
   @property({ type: Boolean })
   disabled: boolean = false;
 
-  static getMetaConfig() {
+  static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
     // plugin contract information
     return {
       controlName: 'Material Text field',

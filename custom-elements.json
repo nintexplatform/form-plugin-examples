@@ -27,6 +27,119 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/components/material-textfield/material-textfield.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ZwcTextfield",
+          "members": [
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "outlined"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<NintexPlugin> | NintexPlugin"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "title"
+            },
+            {
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "description"
+            },
+            {
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "outlined"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "zwc-textfield",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZwcTextfield",
+          "declaration": {
+            "name": "ZwcTextfield",
+            "module": "src/components/material-textfield/material-textfield.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "zwc-textfield",
+          "declaration": {
+            "name": "ZwcTextfield",
+            "module": "src/components/material-textfield/material-textfield.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/iframe/iframe.ts",
       "declarations": [
         {
@@ -34,11 +147,6 @@
           "description": "",
           "name": "ZwcIframe",
           "members": [
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true
-            },
             {
               "kind": "field",
               "name": "name",
@@ -74,6 +182,16 @@
               },
               "default": "500",
               "attribute": "height"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<NintexPlugin> | NintexPlugin"
+                }
+              }
             }
           ],
           "attributes": [
@@ -133,114 +251,6 @@
           "declaration": {
             "name": "ZwcIframe",
             "module": "src/components/iframe/iframe.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/material-textfield/material-textfield.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "ZwcTextfield",
-          "members": [
-            {
-              "kind": "field",
-              "name": "title",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "title"
-            },
-            {
-              "kind": "field",
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "description"
-            },
-            {
-              "kind": "field",
-              "name": "outlined",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "outlined"
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "disabled"
-            },
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true
-            }
-          ],
-          "attributes": [
-            {
-              "name": "title",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "title"
-            },
-            {
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "description"
-            },
-            {
-              "name": "outlined",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "outlined"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "zwc-textfield",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZwcTextfield",
-          "declaration": {
-            "name": "ZwcTextfield",
-            "module": "src/components/material-textfield/material-textfield.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "zwc-textfield",
-          "declaration": {
-            "name": "ZwcTextfield",
-            "module": "src/components/material-textfield/material-textfield.ts"
           }
         }
       ]
