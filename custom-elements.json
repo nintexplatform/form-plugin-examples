@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/iframe/iframe"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/material-textfield/material-textfield"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/iframe/iframe.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ZwcIframe",
+          "members": [
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Hello'",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Hello'",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://stackoverflow.com/'",
+              "attribute": "src"
+            },
+            {
+              "kind": "field",
+              "name": "height",
+              "type": {
+                "text": "number"
+              },
+              "default": "500",
+              "attribute": "height"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Hello'",
+              "fieldName": "name"
+            },
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Hello'",
+              "fieldName": "title"
+            },
+            {
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://stackoverflow.com/'",
+              "fieldName": "src"
+            },
+            {
+              "name": "height",
+              "type": {
+                "text": "number"
+              },
+              "default": "500",
+              "fieldName": "height"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "zwc-iframe",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZwcIframe",
+          "declaration": {
+            "name": "ZwcIframe",
+            "module": "src/components/iframe/iframe.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "zwc-iframe",
+          "declaration": {
+            "name": "ZwcIframe",
+            "module": "src/components/iframe/iframe.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/material-textfield/material-textfield.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ZwcTextfield",
+          "members": [
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "outlined"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "title"
+            },
+            {
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "description"
+            },
+            {
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "outlined"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "zwc-textfield",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZwcTextfield",
+          "declaration": {
+            "name": "ZwcTextfield",
+            "module": "src/components/material-textfield/material-textfield.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "zwc-textfield",
+          "declaration": {
+            "name": "ZwcTextfield",
+            "module": "src/components/material-textfield/material-textfield.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
