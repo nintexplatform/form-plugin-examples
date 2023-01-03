@@ -5,6 +5,18 @@ These plugins provide additional functionality that can help you create even mor
 
 We hope you will find these plugins useful and encourage you to contribute your own ideas and code to the repository. Feel free to explore and use the plugins as you see fit, and don't hesitate to reach out if you have any questions or suggestions.
 
+For tutorials and references, see the [Form plugins software development kit](https://help.nintex.com/en-US/formplugins/Home.htm).
+
+## In this repository...
+
+This repository contains an npm package and the source code of some example plugins, as well as pre-built examples you can register directly in your tenant.
+
+|Folder|Description|
+|------|-----------|
+|.storybook| Optional files useful for developing your plugins with Storybook. |
+|examples| Example pre-built plugins you can register directly in your tennat.|
+|src| Source code for example plugins that you can build using the provided npm commands.|
+
 # Getting Started
 Before you begin, ensure you have the following installed:
 * nodejs
