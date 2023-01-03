@@ -1,4 +1,4 @@
-import { e, i as i$1, t, x, _ as _decorate, s, a as i$2, b as e$1, y, c as e$2 } from './directive-1d8ea63a.js';
+import { e, i as i$1, t, x, _ as _decorate, s, a as i$2, b as e$1, y, c as e$2 } from './lit-framework-directive.js';
 
 /**
  * @license

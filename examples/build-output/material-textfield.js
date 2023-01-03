@@ -1,4 +1,4 @@
-import { b as e$2, s as s$1, e as e$3, i as i$1, t as t$1, x, y, a as i$2, c as e$4, d as b, _ as _decorate } from './directive-1d8ea63a.js';
+import { b as e$2, s as s$1, e as e$3, i as i$1, t as t$1, x, y, a as i$2, c as e$4, d as b, _ as _decorate } from './lit-framework-directive.js';
 
 /**
  * @license
@@ -507,7 +507,7 @@ __decorate([
  * Specifies an observer callback that is run when the decorated property
  * changes. The observer receives the current and old value as arguments.
  */
-const observer = (observer) => 
+const observer = (observer) =>
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (proto, propName) => {
     // if we haven't wrapped `updated` in this class, do so
