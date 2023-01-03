@@ -2,6 +2,7 @@ import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import '@material/mwc-textfield/mwc-textfield.js';
 import { NintexPlugin } from '../../lib/nintex-plugin';
+import { TextField } from '@material/mwc-textfield/mwc-textfield.js';
 
 const fire = <T>(
   element: HTMLElement,
@@ -40,7 +41,7 @@ export class ZwcTextfield extends LitElement {
     }
   `;
   @property()
-  title!: string;
+  label!: string;
   @property()
   description!: string;
   @property({ type: Boolean })
@@ -55,6 +56,20 @@ export class ZwcTextfield extends LitElement {
       fallbackDisableSubmit: false,
       iconUrl: 'one-line-text',
       version: '1',
+      properties: {
+        outlined: {
+          type: 'boolean',
+          title: 'Show Outline',
+        },
+        disabled: {
+          type: 'boolean',
+          title: 'Disabled',
+        },
+      },
+      standardProperties: {
+        fieldLabel: true,
+        description: true,
+      },
     };
   }
 
@@ -62,16 +77,16 @@ export class ZwcTextfield extends LitElement {
   render() {
     return html` <mwc-textfield
       id="textfield"
-      .label="${this.title}"
+      .label="${this.label}"
       .helper="${this.description}"
       ?outlined="${this.outlined}"
       ?disabled="${this.disabled}"
-      @change="${(e: any) => this.onChange(e)}"
+      @change="${() => this.onChange()}"
     ></mwc-textfield>`;
   }
 
-  private onChange(e: any) {
-    const el = this.shadowRoot?.getElementById('textfield') as HTMLInputElement;
+  private onChange() {
+    const el = this.shadowRoot?.getElementById('textfield') as TextField;
     if (el) {
       fire<any>(this, { detail: el.value });
     }

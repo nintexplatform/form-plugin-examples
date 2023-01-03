@@ -7,6 +7,11 @@ import { ZwcTextfield } from './material-textfield';
 export default {
   title: 'Material/Textfield',
   component: 'zwc-textfield',
+  parameters: {
+    actions: {
+      handles: ['nintex-value-change'],
+    },
+  },
 } as Meta;
 
 const Template: Story<ZwcTextfield> = ({

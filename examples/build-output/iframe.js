@@ -1,4 +1,4 @@
-import { e, i as i$1, t, x, _ as _decorate, s, a as i$2, b as e$1, y, c as e$2 } from './lit-framework-directive.js';
+import { e, i as i$1, t, x, _ as _decorate, s, a as i$2, b as e$1, y, c as e$2 } from './directive-2abd2358.js';
 
 /**
  * @license
@@ -10,19 +10,70 @@ let ZwcIframe = _decorate([e$2('zwc-iframe')], function (_initialize, _LitElemen
   class ZwcIframe extends _LitElement {
     constructor(...args) {
       super(...args);
-
       _initialize(this);
     }
-
   }
-
   return {
     F: ZwcIframe,
     d: [{
+      kind: "field",
+      static: true,
+      key: "styles",
+      value() {
+        return i$2`
+    :host {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+
+    .frame {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+    }
+  `;
+      }
+    }, {
+      kind: "field",
+      decorators: [e$1()],
+      key: "name",
+      value() {
+        return 'name';
+      }
+    }, {
+      kind: "field",
+      decorators: [e$1()],
+      key: "title",
+      value() {
+        return 'Hello';
+      }
+    }, {
+      kind: "field",
+      decorators: [e$1()],
+      key: "src",
+      value() {
+        return 'https://www.wikipedia.org/';
+      }
+    }, {
+      kind: "field",
+      decorators: [e$1({
+        type: Number
+      })],
+      key: "height",
+      value() {
+        return 500;
+      }
+    }, {
       kind: "method",
       static: true,
       key: "getMetaConfig",
-      value: function getMetaConfig() {
+      value:
+      // Define scoped styles right with your component, in plain CSS
+
+      function getMetaConfig() {
         // plugin contract information
         return {
           controlName: 'IFrame-new',
@@ -40,7 +91,8 @@ let ZwcIframe = _decorate([e$2('zwc-iframe')], function (_initialize, _LitElemen
             height: {
               type: 'string',
               title: 'Height',
-              description: 'Height of the component'
+              description: 'Height of the component',
+              defaultValue: 500
             }
           },
           standardProperties: {
@@ -49,73 +101,13 @@ let ZwcIframe = _decorate([e$2('zwc-iframe')], function (_initialize, _LitElemen
             description: true
           }
         };
-      } // Define scoped styles right with your component, in plain CSS
-
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return i$2`
-    :host {
-      height: 100%;
-      width: 100%;
-      display: block;
-    }
-    .frame {
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      background-color: transparent;
-      border: none;
-    }
-  `;
       }
 
-    }, {
-      kind: "field",
-      decorators: [e$1()],
-      key: "name",
-
-      value() {
-        return 'Hello';
-      }
-
-    }, {
-      kind: "field",
-      decorators: [e$1()],
-      key: "title",
-
-      value() {
-        return 'Hello';
-      }
-
-    }, {
-      kind: "field",
-      decorators: [e$1()],
-      key: "src",
-
-      value() {
-        return 'https://stackoverflow.com/';
-      }
-
-    }, {
-      kind: "field",
-      decorators: [e$1({
-        type: Number
-      })],
-      key: "height",
-
-      value() {
-        return 500;
-      }
-
+      // Render the UI as a function of component state
     }, {
       kind: "method",
       key: "render",
-      value: // Render the UI as a function of component state
-      function render() {
+      value: function render() {
         console.log('Props', {
           name: this.name,
           title: this.title,
@@ -125,7 +117,7 @@ let ZwcIframe = _decorate([e$2('zwc-iframe')], function (_initialize, _LitElemen
         let styles = {
           height: this.height + 'px'
         };
-        return y`<iframe
+        return y` <iframe
       class="frame"
       style=${i(styles)}
       .name=${this.name}

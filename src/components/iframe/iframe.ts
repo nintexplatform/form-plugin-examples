@@ -22,11 +22,11 @@ export class ZwcIframe extends LitElement {
     }
   `;
   @property()
-  name: string = 'Hello';
+  name!: string;
   @property()
-  title: string = 'Hello';
+  description!: string;
   @property()
-  src: string = 'https://stackoverflow.com/';
+  src: string = 'https://www.wikipedia.org/';
   @property({ type: Number })
   height: number = 500;
 
@@ -45,11 +45,18 @@ export class ZwcIframe extends LitElement {
           title: 'Source URL',
           description:
             'URL of the iframe, please note many sites block been rendered in iframes',
+          defaultValue: 'https://www.wikipedia.org/',
         },
         height: {
           type: 'string',
           title: 'Height',
           description: 'Height of the component',
+          defaultValue: 500,
+        },
+        frameTitle: {
+          type: 'string',
+          title: 'Frame Title',
+          description: 'IFrame Title',
         },
       },
       standardProperties: {
@@ -64,7 +71,7 @@ export class ZwcIframe extends LitElement {
   render() {
     console.log('Props', {
       name: this.name,
-      title: this.title,
+      description: this.description,
       src: this.src,
       height: this.height,
     });
@@ -76,7 +83,7 @@ export class ZwcIframe extends LitElement {
       style=${styleMap(styles)}
       .name=${this.name}
       allow="geolocation *; microphone; camera"
-      .title=${this.title}
+      .title=${this.description}
       src=${this.src}
     ></iframe>`;
   }
