@@ -1,6 +1,5 @@
 import { Meta, Story } from '@storybook/web-components';
 import { html } from 'lit';
-import { ifDefined } from 'lit/directives/if-defined.js';
 
 import './iframe';
 import { ZwcIframe } from './iframe';
@@ -10,17 +9,20 @@ export default {
   component: 'zwc-iframe',
 } as Meta;
 
-const Template: Story<ZwcIframe> = ({ name, title, src, height }) => {
-  console.log('name', name);
-
+const Template: Story<ZwcIframe> = ({ name, description, src, height }) => {
   return html`<zwc-iframe
-    name="${ifDefined(name)},"
-    title=${ifDefined(title)}
-    src="${ifDefined(src)}"
-    height=${ifDefined(height)}
+    .name=${name}
+    .description=${description}
+    .src=${src}
+    .height=${height}
   >
   </zwc-iframe>`;
 };
 
 export const Base: Story<ZwcIframe> = Template.bind({});
-Base.args = {};
+Base.args = {
+  src: 'https://www.wikipedia.org/',
+  height: 500,
+  name: 'Name',
+  description: 'description',
+};

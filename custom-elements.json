@@ -27,6 +27,12 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/lib/nintex-plugin.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/material-textfield/material-textfield.ts",
       "declarations": [
         {
@@ -36,11 +42,11 @@
           "members": [
             {
               "kind": "field",
-              "name": "title",
+              "name": "label",
               "type": {
                 "text": "string"
               },
-              "attribute": "title"
+              "attribute": "label"
             },
             {
               "kind": "field",
@@ -81,11 +87,11 @@
           ],
           "attributes": [
             {
-              "name": "title",
+              "name": "label",
               "type": {
                 "text": "string"
               },
-              "fieldName": "title"
+              "fieldName": "label"
             },
             {
               "name": "description",
@@ -153,17 +159,15 @@
               "type": {
                 "text": "string"
               },
-              "default": "'Hello'",
               "attribute": "name"
             },
             {
               "kind": "field",
-              "name": "title",
+              "name": "description",
               "type": {
                 "text": "string"
               },
-              "default": "'Hello'",
-              "attribute": "title"
+              "attribute": "description"
             },
             {
               "kind": "field",
@@ -171,7 +175,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "'https://stackoverflow.com/'",
+              "default": "'https://www.wikipedia.org/'",
               "attribute": "src"
             },
             {
@@ -200,23 +204,21 @@
               "type": {
                 "text": "string"
               },
-              "default": "'Hello'",
               "fieldName": "name"
             },
             {
-              "name": "title",
+              "name": "description",
               "type": {
                 "text": "string"
               },
-              "default": "'Hello'",
-              "fieldName": "title"
+              "fieldName": "description"
             },
             {
               "name": "src",
               "type": {
                 "text": "string"
               },
-              "default": "'https://stackoverflow.com/'",
+              "default": "'https://www.wikipedia.org/'",
               "fieldName": "src"
             },
             {

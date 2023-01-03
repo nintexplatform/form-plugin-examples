@@ -1,4 +1,4 @@
-import { b as e$2, s as s$1, e as e$3, i as i$1, t as t$1, x, y, a as i$2, c as e$4, d as b, _ as _decorate } from './lit-framework-directive.js';
+import { b as e$2, s as s$1, e as e$3, i as i$1, t as t$1, x, y, a as i$2, c as e$4, d as b, _ as _decorate } from './directive-2abd2358.js';
 
 /**
  * @license
@@ -507,7 +507,7 @@ __decorate([
  * Specifies an observer callback that is run when the decorated property
  * changes. The observer receives the current and old value as arguments.
  */
-const observer = (observer) =>
+const observer = (observer) => 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (proto, propName) => {
     // if we haven't wrapped `updated` in this class, do so
@@ -2221,24 +2221,19 @@ const fire = (element, data) => {
   element.dispatchEvent(event);
   return event;
 };
-
 let ZwcTextfield = _decorate([e$4('zwc-textfield')], function (_initialize, _LitElement) {
   class ZwcTextfield extends _LitElement {
     constructor(...args) {
       super(...args);
-
       _initialize(this);
     }
-
   }
-
   return {
     F: ZwcTextfield,
     d: [{
       kind: "field",
       static: true,
       key: "styles",
-
       value() {
         return i$2`
     :host {
@@ -2254,7 +2249,6 @@ let ZwcTextfield = _decorate([e$4('zwc-textfield')], function (_initialize, _Lit
     }
   `;
       }
-
     }, {
       kind: "field",
       decorators: [e$2()],
@@ -2271,22 +2265,18 @@ let ZwcTextfield = _decorate([e$4('zwc-textfield')], function (_initialize, _Lit
         type: Boolean
       })],
       key: "outlined",
-
       value() {
         return false;
       }
-
     }, {
       kind: "field",
       decorators: [e$2({
         type: Boolean
       })],
       key: "disabled",
-
       value() {
         return false;
       }
-
     }, {
       kind: "method",
       static: true,
@@ -2299,8 +2289,9 @@ let ZwcTextfield = _decorate([e$4('zwc-textfield')], function (_initialize, _Lit
           iconUrl: 'one-line-text',
           version: '1'
         };
-      } // Render the UI as a function of component state
+      }
 
+      // Render the UI as a function of component state
     }, {
       kind: "method",
       key: "render",
@@ -2319,7 +2310,6 @@ let ZwcTextfield = _decorate([e$4('zwc-textfield')], function (_initialize, _Lit
       key: "onChange",
       value: function onChange(e) {
         const el = this.shadowRoot?.getElementById('textfield');
-
         if (el) {
           fire(this, {
             detail: el.value
