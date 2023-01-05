@@ -2,24 +2,24 @@ import { Meta, Story } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './iframe';
-import { ZwcIframe } from './iframe';
+import { NintexSampleIframe } from './iframe';
 
 export default {
   title: 'IFrame',
-  component: 'zwc-iframe',
+  component: 'nintex-sample-iframe',
 } as Meta;
 
-const Template: Story<ZwcIframe> = ({ name, description, src, height }) => {
-  return html`<zwc-iframe
+const Template: Story<NintexSampleIframe> = ({ name, description, src, height }) => {
+  return html`<nintex-sample-iframe
     .name=${name}
     .description=${description}
     .src=${src}
     .height=${height}
   >
-  </zwc-iframe>`;
+  </nintex-sample-iframe>`;
 };
 
-export const Base: Story<ZwcIframe> = Template.bind({});
+export const Base: Story<NintexSampleIframe> = Template.bind({});
 Base.args = {
   src: 'https://www.wikipedia.org/',
   height: 500,

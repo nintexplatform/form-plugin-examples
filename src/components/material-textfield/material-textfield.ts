@@ -1,8 +1,9 @@
-import { css, html, LitElement } from 'lit';
+import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import '@material/mwc-textfield/mwc-textfield.js';
 import { NintexPlugin } from '../../lib/nintex-plugin';
 import { TextField } from '@material/mwc-textfield/mwc-textfield.js';
+import { styles } from './material-textfield.styles';
 
 const fire = <T>(
   element: HTMLElement,
@@ -25,21 +26,10 @@ const fire = <T>(
   return event;
 };
 
-@customElement('zwc-textfield')
-export class ZwcTextfield extends LitElement {
-  static styles = css`
-    :host {
-      /* height: 100%; */
-      width: 100%;
-      display: block;
+@customElement('nintex-sample-textfield')
+export class NintexSampleTextfield extends LitElement {
+  static styles = styles;
 
-      --mdc-theme-primary: var(--ntx-form-theme-color-highlight, #f56900);
-    }
-
-    mwc-textfield {
-      width: 100%;
-    }
-  `;
   @property()
   label!: string;
   @property()

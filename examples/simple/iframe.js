@@ -1,6 +1,6 @@
 import {css, html, LitElement, styleMap} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 
-export class ZwcIframe extends LitElement {
+export class SampleIframe extends LitElement {
     // Define scoped styles right with your component, in plain CSS
     static styles = css`
       :host {
@@ -71,5 +71,5 @@ export class ZwcIframe extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'zwc-iframe-new';
-customElements.define(elementName, ZwcIframe);
+const elementName = 'sample-iframe';
+customElements.define(elementName, SampleIframe);

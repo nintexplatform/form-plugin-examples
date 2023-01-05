@@ -1,26 +1,14 @@
-import { css, html, LitElement } from 'lit';
+import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit-html/directives/style-map.js';
 import { NintexPlugin } from '../../lib/nintex-plugin';
+import { styles } from './iframe.styles';
 
-@customElement('zwc-iframe')
-export class ZwcIframe extends LitElement {
+@customElement('nintex-sample-iframe')
+export class NintexSampleIframe extends LitElement {
   // Define scoped styles right with your component, in plain CSS
-  static styles = css`
-    :host {
-      height: 100%;
-      width: 100%;
-      display: block;
-    }
-
-    .frame {
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      background-color: transparent;
-      border: none;
-    }
-  `;
+  static styles = styles;
+  
   @property()
   name!: string;
   @property()

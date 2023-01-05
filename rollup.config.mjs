@@ -4,17 +4,23 @@ import { babel } from '@rollup/plugin-babel';
 import path from 'path';
 import { existsSync, readdirSync } from 'fs';
 
-const getDirectories = source =>
+/**
+ * This is used to split out the individual Web components into there own js output
+ * 
+ * @param {*} source The base folder to start serching
+ * @returns a list of file paths that indicate the exported web component
+ */
+const getPrimaryComponent = source =>
   readdirSync(source, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
     .map(dirent => path.join(source, dirent.name, `${dirent.name}.ts`))
     .filter(x => existsSync(x));
 
-const allEntrys = getDirectories('./src/components');
+const individualComponents = getPrimaryComponent('./src/components');
 
 export default [
   {
-    input: ['src/index.ts', ...allEntrys],
+    input: ['src/index.ts', ...individualComponents],
     output: {
       format: 'es',
       chunkFileNames: '[name]-[hash].js',

@@ -20,7 +20,7 @@ to use both the plugins in this folder inside of your tenant, follow these steps
 2. Navigate to `Form plugins` 
 3. Click `Add plugin`
 4. Enter the following details 
-    * Element name: zwc-iframe-new
+    * Element name: sample-iframe
     * Description: IFrame Simple
     * Source URL: https://cdn.jsdelivr.net/gh/nintexplatform/form-plugin-examples/examples/simple/iframe.js
 5. Click Create
@@ -41,13 +41,13 @@ to use both the plugins in this folder inside of your tenant, follow these steps
 2. Navigate to `Form plugins` 
 3. Click `Add plugin`
 4. Enter the following details 
-    * Element name: zwc-iframe
+    * Element name: nintex-sample-iframe
     * Description: IFrame Build Output
     * Source URL: https://cdn.jsdelivr.net/gh/nintexplatform/form-plugin-examples/build-output/iframe.js
 5. Click Create
 6. Click `Add plugin`
 7. Enter the following details 
-    * Element name: zwc-textfield
+    * Element name: nintex-sample-textfield
     * Description: Material Text field
     * Source URL: https://cdn.jsdelivr.net/gh/nintexplatform/form-plugin-examples/build-output/material-textfield.js
 8. Click Create

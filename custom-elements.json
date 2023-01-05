@@ -33,125 +33,12 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/material-textfield/material-textfield.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "ZwcTextfield",
-          "members": [
-            {
-              "kind": "field",
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "label"
-            },
-            {
-              "kind": "field",
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "description"
-            },
-            {
-              "kind": "field",
-              "name": "outlined",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "outlined"
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "disabled"
-            },
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "Promise<NintexPlugin> | NintexPlugin"
-                }
-              }
-            }
-          ],
-          "attributes": [
-            {
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "label"
-            },
-            {
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "description"
-            },
-            {
-              "name": "outlined",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "outlined"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "zwc-textfield",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZwcTextfield",
-          "declaration": {
-            "name": "ZwcTextfield",
-            "module": "src/components/material-textfield/material-textfield.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "zwc-textfield",
-          "declaration": {
-            "name": "ZwcTextfield",
-            "module": "src/components/material-textfield/material-textfield.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/iframe/iframe.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "ZwcIframe",
+          "name": "NintexSampleIframe",
           "members": [
             {
               "kind": "field",
@@ -234,25 +121,138 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "zwc-iframe",
+          "tagName": "nintex-sample-iframe",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "ZwcIframe",
+          "name": "NintexSampleIframe",
           "declaration": {
-            "name": "ZwcIframe",
+            "name": "NintexSampleIframe",
             "module": "src/components/iframe/iframe.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "zwc-iframe",
+          "name": "nintex-sample-iframe",
           "declaration": {
-            "name": "ZwcIframe",
+            "name": "NintexSampleIframe",
             "module": "src/components/iframe/iframe.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/material-textfield/material-textfield.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexSampleTextfield",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "outlined"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<NintexPlugin> | NintexPlugin"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "label"
+            },
+            {
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "description"
+            },
+            {
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "outlined"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-sample-textfield",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleTextfield",
+          "declaration": {
+            "name": "NintexSampleTextfield",
+            "module": "src/components/material-textfield/material-textfield.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-sample-textfield",
+          "declaration": {
+            "name": "NintexSampleTextfield",
+            "module": "src/components/material-textfield/material-textfield.ts"
           }
         }
       ]
