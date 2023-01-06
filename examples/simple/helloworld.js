@@ -5,7 +5,7 @@ export class HelloWorld extends LitElement {
   // return a promise for contract changes.
   static async getMetaConfig() {
     return {
-      controlName: 'Hello World',
+      title: 'Hello World',
       fallbackDisableSubmit: false,
       version: '1.2',
     };
