@@ -1,7 +1,7 @@
 import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 ​
 // define the component
-export class CustomInput extends LitElement {
+export class HelloWorld extends LitElement {
   // return a promise for contract changes.
   static async getMetaConfig() {
     return {
@@ -18,4 +18,4 @@ export class CustomInput extends LitElement {
 ​
 // registering the web component
 const elementName = 'hello-world';
-customElements.define(elementName, CustomInput);
+customElements.define(elementName, HelloWorld);
