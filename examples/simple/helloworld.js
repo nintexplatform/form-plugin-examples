@@ -13,7 +13,7 @@ export class HelloWorld extends LitElement {
       fallbackDisableSubmit: false,
       version: '1.2',
       properties: {
-        src: {
+        who: {
           type: 'string',
           title: 'Who',
           description: 'Who to say hello to'
