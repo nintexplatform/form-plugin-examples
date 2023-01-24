@@ -52,10 +52,6 @@ export class NintexSampleTextfield extends LitElement {
           type: 'boolean',
           title: 'Show Outline',
         },
-        disabled: {
-          type: 'boolean',
-          title: 'Disabled',
-        },
         value: {
           type: 'string',
           title: 'Value',

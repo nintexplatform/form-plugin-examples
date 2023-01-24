@@ -2297,10 +2297,6 @@ let NintexSampleTextfield = _decorate([e$4('nintex-sample-textfield')], function
               type: 'boolean',
               title: 'Show Outline'
             },
-            disabled: {
-              type: 'boolean',
-              title: 'Disabled'
-            },
             value: {
               type: 'string',
               title: 'Value',
