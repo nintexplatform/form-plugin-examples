@@ -2231,7 +2231,9 @@ const fire = (element, data) => {
     composed: true,
     ...data
   };
-  const event = new CustomEvent('nintex-value-change', args);
+
+  // the event name 'nintex-value-change' is required to tell the form engine to update the value
+  const event = new CustomEvent('ntx-value-change', args);
   element.dispatchEvent(event);
   return event;
 };
@@ -2275,7 +2277,7 @@ let NintexSampleTextfield = _decorate([e$4('nintex-sample-textfield')], function
       decorators: [e$2({
         type: Boolean
       })],
-      key: "disabled",
+      key: "readOnly",
       value() {
         return false;
       }
@@ -2298,11 +2300,20 @@ let NintexSampleTextfield = _decorate([e$4('nintex-sample-textfield')], function
             disabled: {
               type: 'boolean',
               title: 'Disabled'
+            },
+            value: {
+              type: 'string',
+              title: 'Value',
+              // this is to mark the field as value field. it should only be defined once in the list of properties
+              isValueField: true,
+              defaultValue: 'This is a text field default value'
             }
           },
           standardProperties: {
             fieldLabel: true,
-            description: true
+            description: true,
+            defaultValue: true,
+            readOnly: true
           }
         };
       }
@@ -2317,7 +2328,7 @@ let NintexSampleTextfield = _decorate([e$4('nintex-sample-textfield')], function
       .label="${this.label}"
       .helper="${this.description}"
       ?outlined="${this.outlined}"
-      ?disabled="${this.disabled}"
+      ?disabled="${this.readOnly}"
       @change="${() => this.onChange()}"
     ></mwc-textfield>`;
       }

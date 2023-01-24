@@ -21,7 +21,8 @@ const fire = <T>(
     ...data,
   };
 
-  const event = new CustomEvent('nintex-value-change', args);
+  // the event name 'nintex-value-change' is required to tell the form engine to update the value
+  const event = new CustomEvent('ntx-value-change', args);
   element.dispatchEvent(event);
   return event;
 };
@@ -37,7 +38,7 @@ export class NintexSampleTextfield extends LitElement {
   @property({ type: Boolean })
   outlined: boolean = false;
   @property({ type: Boolean })
-  disabled: boolean = false;
+  readOnly: boolean = false;
 
   static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
     // plugin contract information
@@ -55,10 +56,19 @@ export class NintexSampleTextfield extends LitElement {
           type: 'boolean',
           title: 'Disabled',
         },
+        value: {
+          type: 'string',
+          title: 'Value',
+          // this is to mark the field as value field. it should only be defined once in the list of properties
+          isValueField: true,
+          defaultValue: 'This is a text field default value',
+        },
       },
       standardProperties: {
         fieldLabel: true,
         description: true,
+        defaultValue: true,
+        readOnly: true,
       },
     };
   }
@@ -70,7 +80,7 @@ export class NintexSampleTextfield extends LitElement {
       .label="${this.label}"
       .helper="${this.description}"
       ?outlined="${this.outlined}"
-      ?disabled="${this.disabled}"
+      ?disabled="${this.readOnly}"
       @change="${() => this.onChange()}"
     ></mwc-textfield>`;
   }
