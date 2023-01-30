@@ -33,6 +33,84 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/components/grid-js/grid-js.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexSampleGirdJs",
+          "members": [
+            {
+              "kind": "field",
+              "name": "sortable",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "sortable"
+            },
+            {
+              "kind": "field",
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "pagination"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "sortable",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "sortable"
+            },
+            {
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "pagination"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-sample-grid-js",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleGirdJs",
+          "declaration": {
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-sample-grid-js",
+          "declaration": {
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/iframe/iframe.ts",
       "declarations": [
         {
@@ -180,12 +258,12 @@
             },
             {
               "kind": "field",
-              "name": "disabled",
+              "name": "readOnly",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "attribute": "disabled"
+              "attribute": "readOnly"
             },
             {
               "kind": "method",
@@ -222,12 +300,12 @@
               "fieldName": "outlined"
             },
             {
-              "name": "disabled",
+              "name": "readOnly",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "fieldName": "disabled"
+              "fieldName": "readOnly"
             }
           ],
           "superclass": {

@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@material/mwc-textfield": "^0.27.0",
+    "gridjs": "^6.0.6",
     "lit": "^2.3.1"
   },
   "customElements": "custom-elements.json",
