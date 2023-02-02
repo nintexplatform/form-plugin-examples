@@ -3,12 +3,14 @@ import { customElement, property } from 'lit/decorators.js';
 import { NintexPlugin } from '../../lib/nintex-plugin';
 
 @customElement('nintex-styled-input')
-export class StyledInput extends LitElement {
+export class NintexStyledInput extends LitElement {
   static styles = css`
     .form-control {
       color: var(--ntx-form-theme-color-secondary);
-      background-color: var(--ntx-form-theme-color-input-background,
-      transparent);
+      background-color: var(
+        --ntx-form-theme-color-input-background,
+        transparent
+      );
       font-size: var(--ntx-form-theme-text-input-size);
       font-family: var(--ntx-form-theme-font-family);
       border: 1px solid var(--ntx-form-theme-color-border);
@@ -54,7 +56,6 @@ export class StyledInput extends LitElement {
   // Render the UI as a function of component state
   render() {
     return html`
-      <p>hello</p>
       <input
         class='form-control'
         ?disabled='${this.readOnly}'

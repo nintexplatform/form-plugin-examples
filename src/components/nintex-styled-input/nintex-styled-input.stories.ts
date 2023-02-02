@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/web-components';
 import { html } from 'lit';
 
-import { StyledInput } from './styled-input';
+import { NintexStyledInput } from './nintex-styled-input';
 
 export default {
   title: 'Styled Input',
@@ -13,8 +13,8 @@ export default {
   },
 } as Meta;
 
-const Template: Story<StyledInput> = ({ value }) => {
+const Template: Story<NintexStyledInput> = ({ value }) => {
   return html`<nintex-styled-input value="${value}"></nintex-styled-input>`;
 };
 
-export const Base: Story<StyledInput> = Template.bind({});
+export const Base: Story<NintexStyledInput> = Template.bind({});
