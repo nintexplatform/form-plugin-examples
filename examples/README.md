@@ -66,3 +66,15 @@ To register the Grid JS plugin in your tenant:
     * Description: Grid JS Example
     * Source URL: https://nintexplatform.github.io/form-plugin-examples/examples/build-output/grid-js.js
 5. Click `Create`.
+
+
+To register the Styled input plugin in your tenant:
+
+1. Open your Nintex Automation Cloud instance.
+2. Click `Form plugins` on the left navigation.
+3. Click `Add plugin`.
+4. Use the following details:
+   - Element name: nintex-styled-input
+   - Description: Styled input
+   - Source URL: https://nintexplatform.github.io/form-plugin-examples/examples/build-output/styled-input.js
+5. Click `Create`.

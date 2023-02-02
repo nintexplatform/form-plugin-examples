@@ -1,0 +1,14 @@
+:root {
+  --ntx-form-theme-font-family: Arial;
+  --ntx-form-theme-color-primary: #0862a1;
+  --ntx-form-theme-color-secondary: #625e62;
+  --ntx-form-theme-color-border: #0b4de8;
+  --ntx-form-theme-color-input-background: #c4caea;
+  --ntx-form-theme-color-page-background: white;
+  --ntx-form-theme-color-form-background: white;
+  --ntx-form-theme-border-radius: 4px;
+  --ntx-form-theme-text-input-size: 20px;
+  --ntx-form-theme-text-label-size: 30px;
+  --ntx-form-control-line-height: 30px;
+  --ntx-form-color-error: red;
+}
