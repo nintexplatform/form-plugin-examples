@@ -2,15 +2,13 @@ import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { NintexPlugin } from '../../lib/nintex-plugin';
 
-@customElement('ntx-styled-input')
+@customElement('nintex-styled-input')
 export class StyledInput extends LitElement {
   static styles = css`
     .form-control {
       color: var(--ntx-form-theme-color-secondary);
-      background-color: var(
-        --ntx-form-theme-color-input-background,
-        transparent
-      );
+      background-color: var(--ntx-form-theme-color-input-background,
+      transparent);
       font-size: var(--ntx-form-theme-text-input-size);
       font-family: var(--ntx-form-theme-font-family);
       border: 1px solid var(--ntx-form-theme-color-border);
@@ -27,7 +25,7 @@ export class StyledInput extends LitElement {
   readOnly: boolean = false;
 
   @property({ type: String })
-  value: boolean = false;
+  value: string = '';
 
   static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
     // plugin contract information
@@ -55,12 +53,14 @@ export class StyledInput extends LitElement {
 
   // Render the UI as a function of component state
   render() {
-    return html`<input
-      class='form-control'
-      ?disabled='${this.readOnly}'
-      @change='${(e: any) => this.onChange(e)}'
-      value='${this.value}'
-    ></input>`;
+    return html`
+      <p>hello</p>
+      <input
+        class='form-control'
+        ?disabled='${this.readOnly}'
+        @change='${(e: any) => this.onChange(e)}'
+        value='${this.value}'
+      ></input>`;
   }
 
   private onChange(e: any) {
