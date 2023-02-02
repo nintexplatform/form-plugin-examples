@@ -1,7 +1,7 @@
 import { setCustomElementsManifest } from "@storybook/web-components";
 import customElements from "../custom-elements.json";
 
-// import './preview.css';
+import './preview.css';
 
 setCustomElementsManifest(customElements);
 

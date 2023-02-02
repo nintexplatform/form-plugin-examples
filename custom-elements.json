@@ -22,6 +22,14 @@
             "name": "*",
             "package": "./components/material-textfield/material-textfield"
           }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/styled-input/styled-input"
+          }
         }
       ]
     },
@@ -30,84 +38,6 @@
       "path": "src/lib/nintex-plugin.ts",
       "declarations": [],
       "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/grid-js/grid-js.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "NintexSampleGirdJs",
-          "members": [
-            {
-              "kind": "field",
-              "name": "sortable",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "sortable"
-            },
-            {
-              "kind": "field",
-              "name": "pagination",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "pagination"
-            },
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true
-            }
-          ],
-          "attributes": [
-            {
-              "name": "sortable",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "sortable"
-            },
-            {
-              "name": "pagination",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "pagination"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "nintex-sample-grid-js",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "NintexSampleGirdJs",
-          "declaration": {
-            "name": "NintexSampleGirdJs",
-            "module": "src/components/grid-js/grid-js.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "nintex-sample-grid-js",
-          "declaration": {
-            "name": "NintexSampleGirdJs",
-            "module": "src/components/grid-js/grid-js.ts"
-          }
-        }
-      ]
     },
     {
       "kind": "javascript-module",
@@ -224,6 +154,89 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/components/styled-input/styled-input.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexStyledInput",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "'hello'",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "readOnly"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<NintexPlugin> | NintexPlugin"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "'hello'",
+              "fieldName": "value"
+            },
+            {
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "readOnly"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-styled-input",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexStyledInput",
+          "declaration": {
+            "name": "NintexStyledInput",
+            "module": "src/components/styled-input/styled-input.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-styled-input",
+          "declaration": {
+            "name": "NintexStyledInput",
+            "module": "src/components/styled-input/styled-input.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/material-textfield/material-textfield.ts",
       "declarations": [
         {
@@ -331,6 +344,88 @@
           "declaration": {
             "name": "NintexSampleTextfield",
             "module": "src/components/material-textfield/material-textfield.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/grid-js/grid-js.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A Simple example of using a grid library\nhttps://gridjs.io/",
+          "name": "NintexSampleGirdJs",
+          "members": [
+            {
+              "kind": "field",
+              "name": "sortable",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Sorting",
+              "attribute": "sortable"
+            },
+            {
+              "kind": "field",
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Pagination",
+              "attribute": "pagination"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "sortable",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Sorting",
+              "fieldName": "sortable"
+            },
+            {
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Pagination",
+              "fieldName": "pagination"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-sample-grid-js",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleGirdJs",
+          "declaration": {
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-sample-grid-js",
+          "declaration": {
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
           }
         }
       ]

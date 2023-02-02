@@ -4,6 +4,7 @@ import { NintexPlugin } from '../../lib/nintex-plugin';
 
 @customElement('nintex-styled-input')
 export class NintexStyledInput extends LitElement {
+  // Define scoped styles right with your component, in plain CSS
   static styles = css`
     .form-control {
       color: var(--ntx-form-theme-color-secondary);
@@ -22,12 +23,10 @@ export class NintexStyledInput extends LitElement {
       border-color: var(--ntx-form-theme-color-primary);
     }
   `;
-
+  @property()
+  value: string = 'hello';
   @property({ type: Boolean })
   readOnly: boolean = false;
-
-  @property({ type: String })
-  value: string = '';
 
   static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
     // plugin contract information
@@ -55,13 +54,13 @@ export class NintexStyledInput extends LitElement {
 
   // Render the UI as a function of component state
   render() {
-    return html`
-      <input
-        class='form-control'
-        ?disabled='${this.readOnly}'
-        @change='${(e: any) => this.onChange(e)}'
-        value='${this.value}'
-      ></input>`;
+    return html`<input
+      class="form-control"
+      class="form-control"
+      ?disabled="${this.readOnly}"
+      @change="${(e: any) => this.onChange(e)}"
+      .value="${this.value}"
+    />`;
   }
 
   private onChange(e: any) {
