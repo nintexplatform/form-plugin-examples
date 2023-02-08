@@ -1,14 +1,15 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit-html/directives/style-map.js';
-import { NintexPlugin } from '../../lib/nintex-plugin';
+import { PluginContract } from '@nintex/form-plugin-contract';
+
 import { styles } from './iframe.styles';
 
 @customElement('nintex-sample-iframe')
 export class NintexSampleIframe extends LitElement {
   // Define scoped styles right with your component, in plain CSS
   static styles = styles;
-  
+
   @property()
   name!: string;
   @property()
@@ -18,7 +19,7 @@ export class NintexSampleIframe extends LitElement {
   @property({ type: Number })
   height: number = 500;
 
-  static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
+  static getMetaConfig(): Promise<PluginContract> | PluginContract {
     // plugin contract information
     return {
       controlName: 'IFrame-new',
@@ -69,10 +70,10 @@ export class NintexSampleIframe extends LitElement {
     return html` <iframe
       class="frame"
       style=${styleMap(styles)}
-      .name=${this.name}
+      .name="${this.name}"
       allow="geolocation *; microphone; camera"
-      .title=${this.description}
-      src=${this.src}
+      .title="${this.description}"
+      src="${this.src}"
     ></iframe>`;
   }
 }

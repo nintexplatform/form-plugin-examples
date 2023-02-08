@@ -18,13 +18,13 @@ const Template: Story<NintexSampleTextfield> = ({
   title,
   description,
   outlined,
-  disabled,
+  readOnly,
 }) => {
   return html`<nintex-sample-textfield
     .title=${title}
     .description=${description}
     ?outlined=${outlined}
-    ?disabled=${disabled}
+    ?readOnly=${readOnly}
   >
   </nintex-sample-textfield>`;
 };
