@@ -1,7 +1,8 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import '@material/mwc-textfield/mwc-textfield.js';
-import { NintexPlugin } from '../../lib/nintex-plugin';
+import { PluginContract } from '@nintex/form-plugin-contract';
+
 import { TextField } from '@material/mwc-textfield/mwc-textfield.js';
 import { styles } from './material-textfield.styles';
 
@@ -40,7 +41,7 @@ export class NintexSampleTextfield extends LitElement {
   @property({ type: Boolean })
   readOnly: boolean = false;
 
-  static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
+  static getMetaConfig(): Promise<PluginContract> | PluginContract {
     // plugin contract information
     return {
       controlName: 'Material Text field',

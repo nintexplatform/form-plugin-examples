@@ -1,6 +1,6 @@
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { NintexPlugin } from '../../lib/nintex-plugin';
+import { PluginContract } from '@nintex/form-plugin-contract';
 
 @customElement('nintex-styled-input')
 export class NintexStyledInput extends LitElement {
@@ -28,7 +28,7 @@ export class NintexStyledInput extends LitElement {
   @property({ type: Boolean })
   readOnly: boolean = false;
 
-  static getMetaConfig(): Promise<NintexPlugin> | NintexPlugin {
+  static getMetaConfig(): Promise<PluginContract> | PluginContract {
     // plugin contract information
     return {
       controlName: 'Styled Input',

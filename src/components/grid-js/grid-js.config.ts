@@ -1,11 +1,10 @@
-import { NintexPlugin } from '../../lib/nintex-plugin';
-
-export const config: NintexPlugin = {
+import { PluginContract } from '@nintex/form-plugin-contract';
+export const config: PluginContract = {
   controlName: 'Grid JS',
-  fallbackDisableSubmit: false,
   description: 'Example of Data Grid with hard-coded data',
   groupName: 'Visual',
-  version: '1.3',
+  fallbackDisableSubmit: false,
+  version: '1.0',
   properties: {
     sortable: {
       type: 'boolean',
