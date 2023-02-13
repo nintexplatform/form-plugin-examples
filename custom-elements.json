@@ -30,14 +30,275 @@
             "name": "*",
             "package": "./components/styled-input/styled-input"
           }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/carbon-slider/carbon-slider"
+          }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/lib/nintex-plugin.ts",
-      "declarations": [],
-      "exports": []
+      "path": "src/components/carbon-slider/carbon-slider.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SampleCarbonSlider",
+          "members": [
+            {
+              "kind": "field",
+              "name": "min",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "min"
+            },
+            {
+              "kind": "field",
+              "name": "max",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "max"
+            },
+            {
+              "kind": "field",
+              "name": "step",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "step"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract> | PluginContract"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "min",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "min"
+            },
+            {
+              "name": "max",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "max"
+            },
+            {
+              "name": "step",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "step"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-sample-carbon-slider",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SampleCarbonSlider",
+          "declaration": {
+            "name": "SampleCarbonSlider",
+            "module": "src/components/carbon-slider/carbon-slider.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-sample-carbon-slider",
+          "declaration": {
+            "name": "SampleCarbonSlider",
+            "module": "src/components/carbon-slider/carbon-slider.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/grid-js/grid-js.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A Simple example of using a grid library\r\nhttps://gridjs.io/",
+          "name": "NintexSampleGirdJs",
+          "members": [
+            {
+              "kind": "field",
+              "name": "sortable",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Sorting",
+              "attribute": "sortable"
+            },
+            {
+              "kind": "field",
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Pagination",
+              "attribute": "pagination"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "sortable",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Sorting",
+              "fieldName": "sortable"
+            },
+            {
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Pagination",
+              "fieldName": "pagination"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-sample-grid-js",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleGirdJs",
+          "declaration": {
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-sample-grid-js",
+          "declaration": {
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/styled-input/styled-input.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexStyledInput",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "'hello'",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "readOnly"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract> | PluginContract"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "'hello'",
+              "fieldName": "value"
+            },
+            {
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "readOnly"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-styled-input",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexStyledInput",
+          "declaration": {
+            "name": "NintexStyledInput",
+            "module": "src/components/styled-input/styled-input.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-styled-input",
+          "declaration": {
+            "name": "NintexStyledInput",
+            "module": "src/components/styled-input/styled-input.ts"
+          }
+        }
+      ]
     },
     {
       "kind": "javascript-module",
@@ -154,89 +415,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/styled-input/styled-input.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "NintexStyledInput",
-          "members": [
-            {
-              "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "'hello'",
-              "attribute": "value"
-            },
-            {
-              "kind": "field",
-              "name": "readOnly",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "readOnly"
-            },
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "Promise<PluginContract> | PluginContract"
-                }
-              }
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "'hello'",
-              "fieldName": "value"
-            },
-            {
-              "name": "readOnly",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "readOnly"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "nintex-styled-input",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "NintexStyledInput",
-          "declaration": {
-            "name": "NintexStyledInput",
-            "module": "src/components/styled-input/styled-input.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "nintex-styled-input",
-          "declaration": {
-            "name": "NintexStyledInput",
-            "module": "src/components/styled-input/styled-input.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/material-textfield/material-textfield.ts",
       "declarations": [
         {
@@ -344,88 +522,6 @@
           "declaration": {
             "name": "NintexSampleTextfield",
             "module": "src/components/material-textfield/material-textfield.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/grid-js/grid-js.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "A Simple example of using a grid library\nhttps://gridjs.io/",
-          "name": "NintexSampleGirdJs",
-          "members": [
-            {
-              "kind": "field",
-              "name": "sortable",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Allow Grid Sorting",
-              "attribute": "sortable"
-            },
-            {
-              "kind": "field",
-              "name": "pagination",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Allow Grid Pagination",
-              "attribute": "pagination"
-            },
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true
-            }
-          ],
-          "attributes": [
-            {
-              "name": "sortable",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Allow Grid Sorting",
-              "fieldName": "sortable"
-            },
-            {
-              "name": "pagination",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Allow Grid Pagination",
-              "fieldName": "pagination"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "nintex-sample-grid-js",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "NintexSampleGirdJs",
-          "declaration": {
-            "name": "NintexSampleGirdJs",
-            "module": "src/components/grid-js/grid-js.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "nintex-sample-grid-js",
-          "declaration": {
-            "name": "NintexSampleGirdJs",
-            "module": "src/components/grid-js/grid-js.ts"
           }
         }
       ]
