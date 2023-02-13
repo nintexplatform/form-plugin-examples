@@ -1,13 +1,8 @@
-import { x, i as i$2, _ as _decorate, s, e as e$1, y, a as e$2 } from './query-assigned-elements-5558b813.js';
-import { e, i as i$1, t } from './directive-2bb7789e.js';
+import { i, _ as _decorate, s, e, y, a as e$1 } from './query-assigned-elements-5558b813.js';
+import { i as i$1 } from './style-map-82785fc5.js';
+import './directive-2bb7789e.js';
 
-/**
- * @license
- * Copyright 2018 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */const i=e(class extends i$1{constructor(t$1){var e;if(super(t$1),t$1.type!==t.ATTRIBUTE||"style"!==t$1.name||(null===(e=t$1.strings)||void 0===e?void 0:e.length)>2)throw Error("The `styleMap` directive must be used in the `style` attribute and must be the only part in the attribute.")}render(t){return Object.keys(t).reduce(((e,r)=>{const s=t[r];return null==s?e:e+`${r=r.replace(/(?:^(webkit|moz|ms|o)|)(?=[A-Z])/g,"-$&").toLowerCase()}:${s};`}),"")}update(e,[r]){const{style:s}=e.element;if(void 0===this.vt){this.vt=new Set;for(const t in r)this.vt.add(t);return this.render(r)}this.vt.forEach((t=>{null==r[t]&&(this.vt.delete(t),t.includes("-")?s.removeProperty(t):s[t]="");}));for(const t in r){const e=r[t];null!=e&&(this.vt.add(t),t.includes("-")?s.setProperty(t,e):s[t]=e);}return x}});
-
-const baseStyle = i$2`
+const baseStyle = i`
   :host {
     height: 100%;
     width: 100%;
@@ -24,7 +19,7 @@ const baseStyle = i$2`
 `;
 const styles = [baseStyle];
 
-let NintexSampleIframe = _decorate([e$2('nintex-sample-iframe')], function (_initialize, _LitElement) {
+let NintexSampleIframe = _decorate([e$1('nintex-sample-iframe')], function (_initialize, _LitElement) {
   class NintexSampleIframe extends _LitElement {
     constructor(...args) {
       super(...args);
@@ -42,24 +37,24 @@ let NintexSampleIframe = _decorate([e$2('nintex-sample-iframe')], function (_ini
       }
     }, {
       kind: "field",
-      decorators: [e$1()],
+      decorators: [e()],
       key: "name",
       value: void 0
     }, {
       kind: "field",
-      decorators: [e$1()],
+      decorators: [e()],
       key: "description",
       value: void 0
     }, {
       kind: "field",
-      decorators: [e$1()],
+      decorators: [e()],
       key: "src",
       value() {
         return 'https://www.wikipedia.org/';
       }
     }, {
       kind: "field",
-      decorators: [e$1({
+      decorators: [e({
         type: Number
       })],
       key: "height",
@@ -125,11 +120,11 @@ let NintexSampleIframe = _decorate([e$2('nintex-sample-iframe')], function (_ini
         };
         return y` <iframe
       class="frame"
-      style=${i(styles)}
-      .name=${this.name}
+      style=${i$1(styles)}
+      .name="${this.name}"
       allow="geolocation *; microphone; camera"
-      .title=${this.description}
-      src=${this.src}
+      .title="${this.description}"
+      src="${this.src}"
     ></iframe>`;
       }
     }]
