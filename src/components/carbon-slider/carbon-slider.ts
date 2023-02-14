@@ -17,21 +17,20 @@ export class SampleCarbonSlider extends LitElement {
   @property()
   step!: string;
 
-  @property({ type: Boolean })
+  @property()
   readOnly: boolean = false;
 
   @property()
-  selectedValue: string = '50';
+  value!: string;
 
   // Render the UI as a function of component state
   render() {
     return html`<bx-slider 
-    label-text="Slider" 
     ?disabled="${this.readOnly}"
     max="${this.max}" 
     min="${this.min}" 
     step="${this.step}" 
-    .value="${this.selectedValue}"
+    .value="${this.value}"
     @change="${(e: any) => this.onChange(e)}">
     </bx-slider>`;
   }
@@ -57,22 +56,22 @@ export class SampleCarbonSlider extends LitElement {
       version: '1',
       properties: {
         min: {
-          type: 'number',
-          title: 'min',
+          type: 'integer',
+          title: 'Min',
           defaultValue: 0,
         },
         max: {
-            type: 'number',
-            title: 'max',
+            type: 'integer',
+            title: 'Max',
             defaultValue: 100,
           },
         step: {
-            type: 'number',
-            title: 'step',
+            type: 'integer',
+            title: 'Step',
             defaultValue: 1,
           },
-        selectedValue: {
-          type: 'number',
+        value: {
+          type: 'integer',
           title: 'Value',
           // this is to mark the field as value field. it should only be defined once in the list of properties
           isValueField: true,

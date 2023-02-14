@@ -16,12 +16,15 @@ export default {
 const Template: Story<SampleCarbonSlider> = ({
   min,
   max,
-  step
+  step,
+  readOnly,
+  value
 }) => {
   return html`<nintex-sample-carbon-slider 
   min=${min} 
   max=${max}
-  step=${step} >
+  step=${step}
+  value=${value} >
   </nintex-sample-carbon-slider>`;
 };
 
@@ -29,5 +32,6 @@ export const Base: Story<SampleCarbonSlider> = Template.bind({});
 Base.args = {
   min: '10',
   max: '500',
-  step: '10'
+  step: '10',
+  value: '100'
 };

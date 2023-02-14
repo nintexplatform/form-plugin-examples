@@ -43,134 +43,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/carbon-slider/carbon-slider.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "SampleCarbonSlider",
-          "members": [
-            {
-              "kind": "field",
-              "name": "min",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "min"
-            },
-            {
-              "kind": "field",
-              "name": "max",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "max"
-            },
-            {
-              "kind": "field",
-              "name": "step",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "step"
-            },
-            {
-              "kind": "field",
-              "name": "readOnly",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "attribute": "readOnly"
-            },
-            {
-              "kind": "field",
-              "name": "selectedValue",
-              "type": {
-                "text": "string"
-              },
-              "default": "'50'",
-              "attribute": "selectedValue"
-            },
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "Promise<PluginContract> | PluginContract"
-                }
-              }
-            }
-          ],
-          "attributes": [
-            {
-              "name": "min",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "min"
-            },
-            {
-              "name": "max",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "max"
-            },
-            {
-              "name": "step",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "step"
-            },
-            {
-              "name": "readOnly",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "readOnly"
-            },
-            {
-              "name": "selectedValue",
-              "type": {
-                "text": "string"
-              },
-              "default": "'50'",
-              "fieldName": "selectedValue"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "nintex-sample-carbon-slider",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "SampleCarbonSlider",
-          "declaration": {
-            "name": "SampleCarbonSlider",
-            "module": "src/components/carbon-slider/carbon-slider.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "nintex-sample-carbon-slider",
-          "declaration": {
-            "name": "SampleCarbonSlider",
-            "module": "src/components/carbon-slider/carbon-slider.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/grid-js/grid-js.ts",
       "declarations": [
         {
@@ -247,6 +119,132 @@
           "declaration": {
             "name": "NintexSampleGirdJs",
             "module": "src/components/grid-js/grid-js.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/carbon-slider/carbon-slider.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SampleCarbonSlider",
+          "members": [
+            {
+              "kind": "field",
+              "name": "min",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "min"
+            },
+            {
+              "kind": "field",
+              "name": "max",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "max"
+            },
+            {
+              "kind": "field",
+              "name": "step",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "step"
+            },
+            {
+              "kind": "field",
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "readOnly"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "value"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract> | PluginContract"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "min",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "min"
+            },
+            {
+              "name": "max",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "max"
+            },
+            {
+              "name": "step",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "step"
+            },
+            {
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "readOnly"
+            },
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "value"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-sample-carbon-slider",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SampleCarbonSlider",
+          "declaration": {
+            "name": "SampleCarbonSlider",
+            "module": "src/components/carbon-slider/carbon-slider.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-sample-carbon-slider",
+          "declaration": {
+            "name": "SampleCarbonSlider",
+            "module": "src/components/carbon-slider/carbon-slider.ts"
           }
         }
       ]
