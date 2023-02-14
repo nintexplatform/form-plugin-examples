@@ -75,6 +75,24 @@
               "attribute": "step"
             },
             {
+              "kind": "field",
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "readOnly"
+            },
+            {
+              "kind": "field",
+              "name": "selectedValue",
+              "type": {
+                "text": "string"
+              },
+              "default": "'50'",
+              "attribute": "selectedValue"
+            },
+            {
               "kind": "method",
               "name": "getMetaConfig",
               "static": true,
@@ -106,6 +124,22 @@
                 "text": "string"
               },
               "fieldName": "step"
+            },
+            {
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "readOnly"
+            },
+            {
+              "name": "selectedValue",
+              "type": {
+                "text": "string"
+              },
+              "default": "'50'",
+              "fieldName": "selectedValue"
             }
           ],
           "superclass": {
