@@ -5435,9 +5435,7 @@ let SampleCarbonSlider = _decorate$1([e$1('nintex-sample-carbon-slider')], funct
       value: void 0
     }, {
       kind: "field",
-      decorators: [e({
-        type: Boolean
-      })],
+      decorators: [e()],
       key: "readOnly",
       value() {
         return false;
@@ -5445,10 +5443,8 @@ let SampleCarbonSlider = _decorate$1([e$1('nintex-sample-carbon-slider')], funct
     }, {
       kind: "field",
       decorators: [e()],
-      key: "selectedValue",
-      value() {
-        return '50';
-      }
+      key: "value",
+      value: void 0
     }, {
       kind: "method",
       key: "render",
@@ -5456,12 +5452,11 @@ let SampleCarbonSlider = _decorate$1([e$1('nintex-sample-carbon-slider')], funct
       // Render the UI as a function of component state
       function render() {
         return y`<bx-slider 
-    label-text="Slider" 
     ?disabled="${this.readOnly}"
     max="${this.max}" 
     min="${this.min}" 
     step="${this.step}" 
-    .value="${this.selectedValue}"
+    .value="${this.value}"
     @change="${e => this.onChange(e)}">
     </bx-slider>`;
       }
@@ -5492,22 +5487,22 @@ let SampleCarbonSlider = _decorate$1([e$1('nintex-sample-carbon-slider')], funct
           version: '1',
           properties: {
             min: {
-              type: 'number',
-              title: 'min',
+              type: 'integer',
+              title: 'Min',
               defaultValue: 0
             },
             max: {
-              type: 'number',
-              title: 'max',
+              type: 'integer',
+              title: 'Max',
               defaultValue: 100
             },
             step: {
-              type: 'number',
-              title: 'step',
+              type: 'integer',
+              title: 'Step',
               defaultValue: 1
             },
-            selectedValue: {
-              type: 'number',
+            value: {
+              type: 'integer',
               title: 'Value',
               // this is to mark the field as value field. it should only be defined once in the list of properties
               isValueField: true
