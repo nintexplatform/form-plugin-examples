@@ -1,9 +1,9 @@
 const config = {
   controlName: 'Grid JS',
-  fallbackDisableSubmit: false,
   description: 'Example of Data Grid with hard-coded data',
   groupName: 'Visual',
-  version: '1.3',
+  fallbackDisableSubmit: false,
+  version: '1.0',
   properties: {
     sortable: {
       type: 'boolean',
