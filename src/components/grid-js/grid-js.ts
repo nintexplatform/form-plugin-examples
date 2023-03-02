@@ -9,25 +9,24 @@ import { styles } from './grid-js.styles';
  */
 @customElement('nintex-sample-grid-js')
 export class NintexSampleGirdJs extends LitElement {
-  private grid?: Grid;
-
   static styles = styles;
-
   /**
    * Allow Grid Sorting
    */
   @property({ type: Boolean })
   sortable = false;
-
   /**
    * Allow Grid Pagination
    */
   @property({ type: Boolean })
   pagination = false;
+  private grid?: Grid;
 
   static getMetaConfig() {
     // plugin contract information
-    return import('./grid-js.config');
+    return import('./grid-js.config').then(({ config }) => {
+      return config;
+    });
   }
 
   firstUpdated() {
@@ -66,6 +65,6 @@ export class NintexSampleGirdJs extends LitElement {
       this.grid.forceRender();
     }
 
-    return html`<div id="js-canvas"></div>`;
+    return html` <div id="js-canvas"></div>`;
   }
 }

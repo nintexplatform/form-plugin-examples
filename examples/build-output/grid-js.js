@@ -376,10 +376,6 @@ let NintexSampleGirdJs = _decorate([e$2('nintex-sample-grid-js')], function (_in
     F: NintexSampleGirdJs,
     d: [{
       kind: "field",
-      key: "grid",
-      value: void 0
-    }, {
-      kind: "field",
       static: true,
       key: "styles",
       value() {
@@ -404,6 +400,10 @@ let NintexSampleGirdJs = _decorate([e$2('nintex-sample-grid-js')], function (_in
         return false;
       }
     }, {
+      kind: "field",
+      key: "grid",
+      value: void 0
+    }, {
       kind: "method",
       static: true,
       key: "getMetaConfig",
@@ -418,7 +418,11 @@ let NintexSampleGirdJs = _decorate([e$2('nintex-sample-grid-js')], function (_in
 
       function getMetaConfig() {
         // plugin contract information
-        return import('./grid-js.config-fc98b750.js');
+        return import('./grid-js.config-fcad4a45.js').then(({
+          config
+        }) => {
+          return config;
+        });
       }
     }, {
       kind: "method",
@@ -447,7 +451,7 @@ let NintexSampleGirdJs = _decorate([e$2('nintex-sample-grid-js')], function (_in
           });
           this.grid.forceRender();
         }
-        return y$1`<div id="js-canvas"></div>`;
+        return y$1` <div id="js-canvas"></div>`;
       }
     }]
   };
