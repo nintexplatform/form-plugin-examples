@@ -7,11 +7,11 @@ export const config: PluginContract = {
   description: 'Material Slider',
   groupName: 'Material',
   standardProperties: {
-    readOnly: true,
+    readOnly: true,  //Add a read-only mode. See https://help.nintex.com/en-US/formplugins/Reference/ReadOnly.htm
     required: true,
     description: false,
   },
-  properties: {
+  properties: { //Custom configuration fields. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
     titleField: {
       type: 'string',
       title: 'Title',
@@ -28,7 +28,7 @@ export const config: PluginContract = {
       type: 'number',
       title: 'Max',
     },
-    value: {
+    value: {  //A field to pass a value to the workflow as a variable. See https://help.nintex.com/en-US/formplugins/Reference/StoreValue.htm
       type: 'number',
       isValueField: true,
     },
