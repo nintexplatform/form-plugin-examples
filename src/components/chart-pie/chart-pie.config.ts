@@ -10,7 +10,7 @@ export const config: PluginContract = {
     description: false,
     fieldLabel: true,
   },
-  properties: {
+  properties: { //Custom configuration fields. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
     bindings: {
       type: 'string',
       enum: ['chart1', 'chart2', 'chart3'],

@@ -5,7 +5,7 @@ export const config: PluginContract = {
   groupName: 'Visual',
   fallbackDisableSubmit: false,
   version: '1.0',
-  properties: {
+  properties: { //Custom configuration fields. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
     sortable: {
       type: 'boolean',
       title: 'Allow Sorting',

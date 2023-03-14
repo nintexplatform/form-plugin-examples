@@ -8,7 +8,7 @@ import { styles } from './iframe.styles';
 @customElement('nintex-sample-iframe')
 export class NintexSampleIframe extends LitElement {
   // Define scoped styles right with your component, in plain CSS
-  static styles = styles;
+  static styles = styles; //Add custom CSS. See https://help.nintex.com/en-US/formplugins/Reference/Style.htm
 
   @property()
   name!: string;
@@ -28,7 +28,7 @@ export class NintexSampleIframe extends LitElement {
       iconUrl: 'one-line-text',
       groupName: 'Visual',
       version: '1.3',
-      properties: {
+      properties: { //Custom configuration fields. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
         src: {
           type: 'string',
           title: 'Source URL',
@@ -49,7 +49,7 @@ export class NintexSampleIframe extends LitElement {
         },
       },
       standardProperties: {
-        readOnly: true,
+        readOnly: true, //Add a read-only mode. See https://help.nintex.com/en-US/formplugins/Reference/ReadOnly.htm
         required: true,
         description: true,
       },
