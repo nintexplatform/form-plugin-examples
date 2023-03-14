@@ -4,8 +4,8 @@ import { PluginContract } from '@nintex/form-plugin-contract';
 
 @customElement('nintex-styled-input')
 export class NintexStyledInput extends LitElement {
-  // Define scoped styles right with your component, in plain CSS
-  static styles = css`
+  // Define scoped styles right with your component, in plain CSS.  See https://help.nintex.com/en-US/formplugins/Reference/Style.htm
+  static styles = css` 
     .form-control {
       color: var(--ntx-form-theme-color-secondary);
       background-color: var(
@@ -26,7 +26,7 @@ export class NintexStyledInput extends LitElement {
   @property()
   value: string = 'hello';
   @property({ type: Boolean })
-  readOnly: boolean = false;
+  readOnly: boolean = false;  //Add a read-only mode. See https://help.nintex.com/en-US/formplugins/Reference/ReadOnly.htm
 
   static getMetaConfig(): Promise<PluginContract> | PluginContract {
     // plugin contract information
@@ -35,11 +35,12 @@ export class NintexStyledInput extends LitElement {
       fallbackDisableSubmit: false,
       iconUrl: 'one-line-text',
       version: '1',
-      properties: {
-        value: {
+      properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
+        value: { //A custom field to store the value. 
           type: 'string',
           title: 'Value',
-          // this is to mark the field as value field. it should only be defined once in the list of properties
+          /* This marks the field as the value field. Should only be defined once in the list of properties. 
+             See https://help.nintex.com/en-US/formplugins/Reference/StoreValue.htm */
           isValueField: true,
           defaultValue: 'This is a text field default value',
         },
@@ -47,7 +48,7 @@ export class NintexStyledInput extends LitElement {
       standardProperties: {
         fieldLabel: true,
         defaultValue: true,
-        readOnly: true,
+        readOnly: true,  //Add a read-only mode. See https://help.nintex.com/en-US/formplugins/Reference/ReadOnly.htm
       },
     };
   }
