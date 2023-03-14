@@ -2,7 +2,7 @@ import {css, html, LitElement, styleMap} from 'https://cdn.jsdelivr.net/gh/lit/d
 
 export class SampleIframe extends LitElement {
     // Define scoped styles right with your component, in plain CSS
-    static styles = css`
+    static styles = css`  //Add custom CSS. See https://help.nintex.com/en-US/formplugins/Reference/Style.htm
       :host {
         height: 100%;
         width: 100%;
@@ -27,7 +27,7 @@ export class SampleIframe extends LitElement {
             iconUrl: "one-line-text",
             groupName: 'Visual',
             version: '1.3',
-            properties: {
+            properties: { //Custom configuration fields. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
                 src: {
                     type: 'string',
                     title: 'Source URL',
@@ -40,7 +40,7 @@ export class SampleIframe extends LitElement {
                 }
             },
             standardProperties: {
-                readOnly: true,
+                readOnly: true,  //Add a read-only mode. See https://help.nintex.com/en-US/formplugins/Reference/ReadOnly.htm
                 required: true,
                 description: true,
             }
