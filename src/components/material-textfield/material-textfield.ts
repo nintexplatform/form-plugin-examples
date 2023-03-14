@@ -30,7 +30,7 @@ const fire = <T>(
 
 @customElement('nintex-sample-textfield')
 export class NintexSampleTextfield extends LitElement {
-  static styles = styles;
+  static styles = styles;  //Add custom CSS. See https://help.nintex.com/en-US/formplugins/Reference/Style.htm
 
   @property()
   label!: string;
@@ -39,7 +39,7 @@ export class NintexSampleTextfield extends LitElement {
   @property({ type: Boolean })
   outlined: boolean = false;
   @property({ type: Boolean })
-  readOnly: boolean = false;
+  readOnly: boolean = false;   //Add a read-only mode. See https://help.nintex.com/en-US/formplugins/Reference/ReadOnly.htm
 
   static getMetaConfig(): Promise<PluginContract> | PluginContract {
     // plugin contract information
@@ -48,12 +48,12 @@ export class NintexSampleTextfield extends LitElement {
       fallbackDisableSubmit: false,
       iconUrl: 'one-line-text',
       version: '1',
-      properties: {
+      properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
         outlined: {
           type: 'boolean',
           title: 'Show Outline',
         },
-        value: {
+        value: {  //A field to pass a value to the workflow as a variable. See https://help.nintex.com/en-US/formplugins/Reference/StoreValue.htm
           type: 'string',
           title: 'Value',
           // this is to mark the field as value field. it should only be defined once in the list of properties
@@ -65,7 +65,7 @@ export class NintexSampleTextfield extends LitElement {
         fieldLabel: true,
         description: true,
         defaultValue: true,
-        readOnly: true,
+        readOnly: true,   //Add a read-only mode. See https://help.nintex.com/en-US/formplugins/Reference/ReadOnly.htm
       },
     };
   }
