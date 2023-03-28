@@ -2,7 +2,7 @@ import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { PluginContract } from '@nintex/form-plugin-contract';
 
-@customElement('nintex-styled-input')
+@customElement('form-plugin-styled-input')
 export class NintexStyledInput extends LitElement {
   // Define scoped styles right with your component, in plain CSS
   static styles = css`

@@ -6,7 +6,7 @@ import { NintexSampleChartJs } from './chart-pie';
 
 export default {
   title: 'Chart Pie',
-  component: 'nintex-sample-chart-js',
+  component: 'form-plugin-chart-js',
   parameters: {
     actions: {
       handles: ['click'],
@@ -23,11 +23,11 @@ export default {
   },
 } as Meta;
 
-const Template: Story<NintexSampleChartJs> = ({ bindings }) => html`<nintex-sample-chart-js
+const Template: Story<NintexSampleChartJs> = ({ bindings }) => html`<form-plugin-chart-js
   style="max-width: 400px"
   .bindings=${bindings}
 >
-</nintex-sample-chart-js>`;
+</form-plugin-chart-js>`;
 
 export const Base: Story<NintexSampleChartJs> = Template.bind({});
 Base.args = {};

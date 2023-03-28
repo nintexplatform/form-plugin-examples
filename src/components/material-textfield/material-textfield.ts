@@ -22,13 +22,13 @@ const fire = <T>(
     ...data,
   };
 
-  // the event name 'nintex-value-change' is required to tell the form engine to update the value
+  // the event name 'ntx-value-change' is required to tell the form engine to update the value
   const event = new CustomEvent('ntx-value-change', args);
   element.dispatchEvent(event);
   return event;
 };
 
-@customElement('nintex-sample-textfield')
+@customElement('form-plugin-textfield')
 export class NintexSampleTextfield extends LitElement {
   static styles = styles;
 

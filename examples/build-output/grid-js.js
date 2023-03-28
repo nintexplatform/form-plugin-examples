@@ -365,7 +365,7 @@ const styles = [baseStyle, girdJsStyles];
  * A Simple example of using a grid library
  * https://gridjs.io/
  */
-let NintexSampleGirdJs = _decorate([e$2('nintex-sample-grid-js')], function (_initialize, _LitElement) {
+let NintexSampleGirdJs = _decorate([e$2('form-plugin-grid-js')], function (_initialize, _LitElement) {
   class NintexSampleGirdJs extends _LitElement {
     constructor(...args) {
       super(...args);

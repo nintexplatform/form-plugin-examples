@@ -6,19 +6,19 @@ import { NintexStyledInput } from './styled-input';
 
 export default {
   title: 'Styled Input',
-  component: 'nintex-styled-input',
+  component: 'form-plugin-styled-input',
   parameters: {
     actions: {
-      handles: ['nintex-value-change'],
+      handles: ['ntx-value-change'],
     },
   },
 } as Meta;
 
 const Template: Story<NintexStyledInput> = ({ value, readOnly }) => {
-  return html` <nintex-styled-input
+  return html` <form-plugin-styled-input
     .value="${value}"
     .readOnly="${readOnly}"
-  ></nintex-styled-input>`;
+  ></form-plugin-styled-input>`;
 };
 
 export const Base: Story<NintexStyledInput> = Template.bind({});

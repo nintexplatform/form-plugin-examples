@@ -6,17 +6,17 @@ import { NintexSampleIframe } from './iframe';
 
 export default {
   title: 'IFrame',
-  component: 'nintex-sample-iframe',
+  component: 'form-plugin-iframe',
 } as Meta;
 
 const Template: Story<NintexSampleIframe> = ({ name, description, src, height }) => {
-  return html`<nintex-sample-iframe
+  return html`<form-plugin-iframe
     .name=${name}
     .description=${description}
     .src=${src}
     .height=${height}
   >
-  </nintex-sample-iframe>`;
+  </form-plugin-iframe>`;
 };
 
 export const Base: Story<NintexSampleIframe> = Template.bind({});
