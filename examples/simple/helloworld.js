@@ -12,7 +12,7 @@ export class HelloWorld extends LitElement {
       controlName: 'Hello World',
       fallbackDisableSubmit: false,
       version: '1.2',
-      properties: {
+      properties: { //A custom configuration field. See https://help.nintex.com/en-US/formplugins/Reference/CustomField.htm
         who: {
           type: 'string',
           title: 'Who',
