@@ -5,7 +5,7 @@ import '@material/mwc-slider/slider.js';
 import { PluginContract } from '@nintex/form-plugin-contract';
 import { updatePluginValue } from '../../utils/events';
 
-@customElement('nintex-sample-slider')
+@customElement('form-plugin-slider')
 export class NintexSampleSlider extends LitElement {
   static styles = css` //Add custom CSS. See https://help.nintex.com/en-US/formplugins/Reference/Style.htm
     :host {

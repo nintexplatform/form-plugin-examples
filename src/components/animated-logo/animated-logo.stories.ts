@@ -10,9 +10,9 @@ export default {
 } as Meta;
 
 const Template: Story<NintexSampleAnimatedLogo> = ({ word }) =>
-  html` <nintex-sample-animated-logo
+  html` <form-plugin-animated-logo
     .word="${word}"
-  ></nintex-sample-animated-logo>`;
+  ></form-plugin-animated-logo>`;
 
 export const Base: Story<NintexSampleAnimatedLogo> = Template.bind({});
 Base.args = {

@@ -12623,11 +12623,11 @@ const fakeData = {
 };
 
 /**
- * @tag nintex-sample-chart-js
- * @tagname nintex-sample-chart-js
+ * @tag form-plugin-chart-js
+ * @tagname form-plugin-chart-js
  *
  */
-let NintexSampleChartJs = _decorate([e$1('nintex-sample-chart-js')], function (_initialize, _LitElement) {
+let NintexSampleChartJs = _decorate([e$1('form-plugin-chart-js')], function (_initialize, _LitElement) {
   class NintexSampleChartJs extends _LitElement {
     constructor() {
       super();

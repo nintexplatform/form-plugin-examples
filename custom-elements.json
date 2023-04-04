@@ -129,7 +129,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "nintex-sample-iframe",
+          "tagName": "form-plugin-iframe",
           "customElement": true
         }
       ],
@@ -144,7 +144,7 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "nintex-sample-iframe",
+          "name": "form-plugin-iframe",
           "declaration": {
             "name": "NintexSampleIframe",
             "module": "src/components/iframe/iframe.ts"
@@ -325,7 +325,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "nintex-sample-textfield",
+          "tagName": "form-plugin-textfield",
           "customElement": true
         }
       ],
@@ -340,7 +340,7 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "nintex-sample-textfield",
+          "name": "form-plugin-textfield",
           "declaration": {
             "name": "NintexSampleTextfield",
             "module": "src/components/material-textfield/material-textfield.ts"
@@ -407,7 +407,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "nintex-sample-grid-js",
+          "tagName": "form-plugin-grid-js",
           "customElement": true
         }
       ],
@@ -422,7 +422,7 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "nintex-sample-grid-js",
+          "name": "form-plugin-grid-js",
           "declaration": {
             "name": "NintexSampleGirdJs",
             "module": "src/components/grid-js/grid-js.ts"

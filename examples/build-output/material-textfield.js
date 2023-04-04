@@ -1932,12 +1932,12 @@ const fire = (element, data) => {
     ...data
   };
 
-  // the event name 'nintex-value-change' is required to tell the form engine to update the value
+  // the event name 'ntx-value-change' is required to tell the form engine to update the value
   const event = new CustomEvent('ntx-value-change', args);
   element.dispatchEvent(event);
   return event;
 };
-let NintexSampleTextfield = _decorate([e$2('nintex-sample-textfield')], function (_initialize, _LitElement) {
+let NintexSampleTextfield = _decorate([e$2('form-plugin-textfield')], function (_initialize, _LitElement) {
   class NintexSampleTextfield extends _LitElement {
     constructor(...args) {
       super(...args);

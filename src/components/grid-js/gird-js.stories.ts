@@ -6,15 +6,15 @@ import { NintexSampleGirdJs } from './grid-js';
 
 export default {
   title: 'Grid JS',
-  component: 'nintex-sample-grid-js',
+  component: 'form-plugin-grid-js',
 } as Meta;
 
 const Template: Story<NintexSampleGirdJs> = ({ sortable, pagination }) => {
-  return html`<nintex-sample-grid-js
+  return html`<form-plugin-grid-js
     ?sortable=${sortable}
     ?pagination=${pagination}
   >
-  </nintex-sample-grid-js>`;
+  </form-plugin-grid-js>`;
 };
 
 export const Base: Story<NintexSampleGirdJs> = Template.bind({});

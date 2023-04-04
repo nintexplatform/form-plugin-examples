@@ -54,10 +54,10 @@ To register the Styled input plugin in your tenant:
 | Element Name                | Description         | Source URL                                                                                        |
 | --------------------------- | ------------------- | ------------------------------------------------------------------------------------------------- |
 | sample-iframe               | IFrame Simple       | https://nintexplatform.github.io/form-plugin-examples/examples/simple/iframe.js                   |
-| nintex-sample-iframe        | IFrame Built Output | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/iframe.js             |
-| nintex-sample-textfield     | Material Text field | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/material-textfield.js |
-| nintex-sample-grid-js       | Grid JS Example     | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/grid-js.js            |
+| form-plugin-iframe        | IFrame Built Output | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/iframe.js             |
+| form-plugin-textfield     | Material Text field | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/material-textfield.js |
+| form-plugin-grid-js       | Grid JS Example     | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/grid-js.js            |
 | nintex-styled-input         | Styled input        | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/styled-input.js       |
-| nintex-sample-chart-js      | Chart Pie           | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/chart-pie.js          |
-| nintex-sample-animated-logo | Animated Logo       | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/animated-logo.js      |
-| nintex-sample-slider        | Material Slider     | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/material-slider.js    |
+| form-plugin-chart-js      | Chart Pie           | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/chart-pie.js          |
+| form-plugin-animated-logo | Animated Logo       | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/animated-logo.js      |
+| form-plugin-slider        | Material Slider     | https://nintexplatform.github.io/form-plugin-examples/examples/build-output/material-slider.js    |

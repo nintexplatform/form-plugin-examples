@@ -5,7 +5,7 @@ import { PluginContract } from '@nintex/form-plugin-contract';
 
 import { styles } from './iframe.styles';
 
-@customElement('nintex-sample-iframe')
+@customElement('form-plugin-iframe')
 export class NintexSampleIframe extends LitElement {
   // Define scoped styles right with your component, in plain CSS
   static styles = styles; //Add custom CSS. See https://help.nintex.com/en-US/formplugins/Reference/Style.htm

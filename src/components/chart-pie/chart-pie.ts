@@ -20,11 +20,11 @@ import { updatePluginValue } from '../../utils/events';
 type bindingsTypes = 'chart1' | 'chart2' | 'chart3';
 
 /**
- * @tag nintex-sample-chart-js
- * @tagname nintex-sample-chart-js
+ * @tag form-plugin-chart-js
+ * @tagname form-plugin-chart-js
  *
  */
-@customElement('nintex-sample-chart-js')
+@customElement('form-plugin-chart-js')
 export class NintexSampleChartJs extends LitElement {
   @property({ reflect: true })
   bindings: bindingsTypes = 'chart1';

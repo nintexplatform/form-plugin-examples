@@ -7,7 +7,7 @@ import { styles } from './grid-js.styles';
  * A Simple example of using a grid library
  * https://gridjs.io/
  */
-@customElement('nintex-sample-grid-js')
+@customElement('form-plugin-grid-js')
 export class NintexSampleGirdJs extends LitElement {
   static styles = styles; //Add custom CSS. See https://help.nintex.com/en-US/formplugins/Reference/Style.htm
   /**

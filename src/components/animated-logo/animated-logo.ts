@@ -4,7 +4,7 @@ import { animate, AnimateController, fade, flyBelow } from '@lit-labs/motion';
 import { styles } from './styles';
 import { PluginContract } from '@nintex/form-plugin-contract';
 
-@customElement('nintex-sample-animated-logo')
+@customElement('form-plugin-animated-logo')
 export class NintexSampleAnimatedLogo extends LitElement {
   static styles = styles;  //Add custom CSS. See https://help.nintex.com/en-US/formplugins/Reference/Style.htm
 

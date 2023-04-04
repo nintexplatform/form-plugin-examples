@@ -19,7 +19,7 @@ const baseStyle = i`
 `;
 const styles = [baseStyle];
 
-let NintexSampleIframe = _decorate([e$1('nintex-sample-iframe')], function (_initialize, _LitElement) {
+let NintexSampleIframe = _decorate([e$1('form-plugin-iframe')], function (_initialize, _LitElement) {
   class NintexSampleIframe extends _LitElement {
     constructor(...args) {
       super(...args);

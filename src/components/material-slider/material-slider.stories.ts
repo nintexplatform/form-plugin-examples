@@ -6,7 +6,7 @@ import { NintexSampleSlider } from './material-slider';
 
 export default {
   title: 'Material/Slider',
-  component: 'nintex-sample-slider',
+  component: 'form-plugin-slider',
   actions: {
     handles: ['nintex-value-change'],
   },
@@ -18,14 +18,14 @@ const Template: Story<NintexSampleSlider> = ({
   min,
   max,
   value,
-}) => html`<nintex-sample-slider
+}) => html`<form-plugin-slider
   .title=${title}
   ?disabled=${disabled}
   .min=${min}
   .max=${max}
   .value=${value}
 >
-</nintex-sample-slider>`;
+</form-plugin-slider>`;
 
 export const Base: Story<NintexSampleSlider> = Template.bind({});
 Base.args = {

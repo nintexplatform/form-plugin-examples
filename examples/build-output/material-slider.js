@@ -2987,7 +2987,7 @@ Slider = __decorate([
     e$2('mwc-slider')
 ], Slider);
 
-let NintexSampleSlider = _decorate([e$2('nintex-sample-slider')], function (_initialize, _LitElement) {
+let NintexSampleSlider = _decorate([e$2('form-plugin-slider')], function (_initialize, _LitElement) {
   class NintexSampleSlider extends _LitElement {
     constructor(...args) {
       super(...args);

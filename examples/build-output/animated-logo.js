@@ -46,7 +46,7 @@ const styles = [i$2`
     }
   `];
 
-let NintexSampleAnimatedLogo = _decorate([e$3('nintex-sample-animated-logo')], function (_initialize, _LitElement) {
+let NintexSampleAnimatedLogo = _decorate([e$3('form-plugin-animated-logo')], function (_initialize, _LitElement) {
   class NintexSampleAnimatedLogo extends _LitElement {
     constructor(...args) {
       super(...args);

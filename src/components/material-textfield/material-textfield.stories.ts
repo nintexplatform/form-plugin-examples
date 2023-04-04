@@ -6,7 +6,7 @@ import { NintexSampleTextfield } from './material-textfield';
 
 export default {
   title: 'Material/Textfield',
-  component: 'nintex-sample-textfield',
+  component: 'form-plugin-textfield',
   parameters: {
     actions: {
       handles: ['nintex-value-change'],
@@ -20,13 +20,13 @@ const Template: Story<NintexSampleTextfield> = ({
   outlined,
   readOnly,
 }) => {
-  return html`<nintex-sample-textfield
+  return html`<form-plugin-textfield
     .title=${title}
     .description=${description}
     ?outlined=${outlined}
     ?readOnly=${readOnly}
   >
-  </nintex-sample-textfield>`;
+  </form-plugin-textfield>`;
 };
 
 export const Base: Story<NintexSampleTextfield> = Template.bind({});
