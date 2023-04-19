@@ -30,14 +30,307 @@
             "name": "*",
             "package": "./components/styled-input/styled-input"
           }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/animated-logo/animated-logo"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/chart-pie/chart-pie"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/material-slider/material-slider"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/grid-js/grid-js"
+          }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/lib/nintex-plugin.ts",
+      "path": "src/utils/events.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "updatePluginValue",
+          "parameters": [
+            {
+              "name": "element",
+              "type": {
+                "text": "HTMLElement"
+              }
+            },
+            {
+              "name": "data",
+              "type": {
+                "text": "{\r\n    bubbles?: boolean;\r\n    cancelable?: boolean;\r\n    composed?: boolean;\r\n    detail?: T;\r\n  }"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "updatePluginValue",
+          "declaration": {
+            "name": "updatePluginValue",
+            "module": "src/utils/events.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/animated-logo/animated-logo.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexSampleAnimatedLogo",
+          "members": [
+            {
+              "kind": "field",
+              "name": "defaultLogo",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Logo'"
+            },
+            {
+              "kind": "field",
+              "name": "word",
+              "attribute": "word"
+            },
+            {
+              "kind": "field",
+              "name": "duration",
+              "type": {
+                "text": "number"
+              },
+              "default": "1000"
+            },
+            {
+              "kind": "field",
+              "name": "controller",
+              "default": "new AnimateController(this, {\r\n    defaultOptions: {\r\n      keyframeOptions: {\r\n        duration: this.duration,\r\n        fill: 'backwards',\r\n      },\r\n    },\r\n  })"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "PluginContract"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "word",
+              "fieldName": "word"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "form-plugin-animated-logo",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleAnimatedLogo",
+          "declaration": {
+            "name": "NintexSampleAnimatedLogo",
+            "module": "src/components/animated-logo/animated-logo.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "form-plugin-animated-logo",
+          "declaration": {
+            "name": "NintexSampleAnimatedLogo",
+            "module": "src/components/animated-logo/animated-logo.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/animated-logo/styles.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "styles",
+          "type": {
+            "text": "array"
+          },
+          "default": "[\r\n  css`\r\n    :host {\r\n      display: flex;\r\n      height: 100%;\r\n      width: 100%;\r\n      align-items: center;\r\n      position: relative;\r\n      overflow: hidden;\r\n      color: #040424;\r\n      cursor: pointer;\r\n    }\r\n\r\n    .letter {\r\n      flex: 1;\r\n      font-size: 30vw;\r\n      text-align: center;\r\n      will-change: transform;\r\n      background: linear-gradient(\r\n        0deg,\r\n        rgba(2, 0, 36, 1) 0%,\r\n        rgba(9, 33, 121, 1) 35%,\r\n        rgba(0, 212, 255, 1) 100%\r\n      );\r\n      -webkit-background-clip: text;\r\n      -webkit-text-fill-color: transparent;\r\n    }\r\n\r\n    .info {\r\n      position: absolute;\r\n      right: 2px;\r\n      bottom: 2px;\r\n    }\r\n  `,\r\n]"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "styles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/components/animated-logo/styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/chart-pie/chart-pie.data.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fakeData",
+          "type": {
+            "text": "{ [key: string]: PieDataType[] }"
+          },
+          "default": "{\r\n  chart1: [\r\n    { value: 40, name: 'Invoices' },\r\n    { value: 60, name: 'Payments' },\r\n    { value: 50, name: 'Receipts' },\r\n  ],\r\n  chart2: [\r\n    { value: 15, name: 'Invoices' },\r\n    { value: 20, name: 'Payments' },\r\n    { value: 30, name: 'Receipts' },\r\n  ],\r\n  chart3: [\r\n    { value: 15, name: 'Spikes' },\r\n    { value: 20, name: 'Demos' },\r\n    { value: 30, name: 'Features' },\r\n  ],\r\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fakeData",
+          "declaration": {
+            "name": "fakeData",
+            "module": "src/components/chart-pie/chart-pie.data.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/chart-pie/chart-pie.models.ts",
       "declarations": [],
       "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/chart-pie/chart-pie.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexSampleChartJs",
+          "members": [
+            {
+              "kind": "field",
+              "name": "bindings",
+              "type": {
+                "text": "bindingsTypes"
+              },
+              "default": "'chart1'",
+              "attribute": "bindings",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "titleField",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "titleField",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "maxHeight",
+              "type": {
+                "text": "number"
+              },
+              "attribute": "maxHeight"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract>"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "bindings",
+              "type": {
+                "text": "bindingsTypes"
+              },
+              "default": "'chart1'",
+              "fieldName": "bindings"
+            },
+            {
+              "name": "titleField",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "titleField"
+            },
+            {
+              "name": "maxHeight",
+              "type": {
+                "text": "number"
+              },
+              "fieldName": "maxHeight"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "form-plugin-chart-js",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleChartJs",
+          "declaration": {
+            "name": "NintexSampleChartJs",
+            "module": "src/components/chart-pie/chart-pie.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "form-plugin-chart-js",
+          "declaration": {
+            "name": "NintexSampleChartJs",
+            "module": "src/components/chart-pie/chart-pie.ts"
+          }
+        }
+      ]
     },
     {
       "kind": "javascript-module",
@@ -154,83 +447,216 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/styled-input/styled-input.ts",
+      "path": "src/components/grid-js/grid-js.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "",
-          "name": "NintexStyledInput",
+          "description": "A Simple example of using a grid library\r\nhttps://gridjs.io/",
+          "name": "NintexSampleGirdJs",
           "members": [
             {
               "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "'hello'",
-              "attribute": "value"
-            },
-            {
-              "kind": "field",
-              "name": "readOnly",
+              "name": "sortable",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "attribute": "readOnly"
+              "description": "Allow Grid Sorting",
+              "attribute": "sortable"
+            },
+            {
+              "kind": "field",
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Pagination",
+              "attribute": "pagination"
             },
             {
               "kind": "method",
               "name": "getMetaConfig",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "Promise<PluginContract> | PluginContract"
-                }
-              }
+              "static": true
             }
           ],
           "attributes": [
             {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "'hello'",
-              "fieldName": "value"
-            },
-            {
-              "name": "readOnly",
+              "name": "sortable",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "fieldName": "readOnly"
+              "description": "Allow Grid Sorting",
+              "fieldName": "sortable"
+            },
+            {
+              "name": "pagination",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Allow Grid Pagination",
+              "fieldName": "pagination"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "nintex-styled-input",
+          "tagName": "form-plugin-grid-js",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "NintexStyledInput",
+          "name": "NintexSampleGirdJs",
           "declaration": {
-            "name": "NintexStyledInput",
-            "module": "src/components/styled-input/styled-input.ts"
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "nintex-styled-input",
+          "name": "form-plugin-grid-js",
           "declaration": {
-            "name": "NintexStyledInput",
-            "module": "src/components/styled-input/styled-input.ts"
+            "name": "NintexSampleGirdJs",
+            "module": "src/components/grid-js/grid-js.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/material-slider/material-slider.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexSampleSlider",
+          "members": [
+            {
+              "kind": "field",
+              "name": "titleField",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "titleField"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "min",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "attribute": "min"
+            },
+            {
+              "kind": "field",
+              "name": "max",
+              "type": {
+                "text": "number"
+              },
+              "default": "100",
+              "attribute": "max"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "attribute": "value",
+              "reflects": true
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract>"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "titleField",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "titleField"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "min",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "fieldName": "min"
+            },
+            {
+              "name": "max",
+              "type": {
+                "text": "number"
+              },
+              "default": "100",
+              "fieldName": "max"
+            },
+            {
+              "name": "value",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "fieldName": "value"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "form-plugin-slider",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleSlider",
+          "declaration": {
+            "name": "NintexSampleSlider",
+            "module": "src/components/material-slider/material-slider.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "form-plugin-slider",
+          "declaration": {
+            "name": "NintexSampleSlider",
+            "module": "src/components/material-slider/material-slider.ts"
           }
         }
       ]
@@ -350,82 +776,83 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/grid-js/grid-js.ts",
+      "path": "src/components/styled-input/styled-input.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "A Simple example of using a grid library\nhttps://gridjs.io/",
-          "name": "NintexSampleGirdJs",
+          "description": "",
+          "name": "NintexStyledInput",
           "members": [
             {
               "kind": "field",
-              "name": "sortable",
+              "name": "value",
               "type": {
-                "text": "boolean"
+                "text": "string"
               },
-              "default": "false",
-              "description": "Allow Grid Sorting",
-              "attribute": "sortable"
+              "default": "'hello'",
+              "attribute": "value"
             },
             {
               "kind": "field",
-              "name": "pagination",
+              "name": "readOnly",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Allow Grid Pagination",
-              "attribute": "pagination"
+              "attribute": "readOnly"
             },
             {
               "kind": "method",
               "name": "getMetaConfig",
-              "static": true
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract> | PluginContract"
+                }
+              }
             }
           ],
           "attributes": [
             {
-              "name": "sortable",
+              "name": "value",
               "type": {
-                "text": "boolean"
+                "text": "string"
               },
-              "default": "false",
-              "description": "Allow Grid Sorting",
-              "fieldName": "sortable"
+              "default": "'hello'",
+              "fieldName": "value"
             },
             {
-              "name": "pagination",
+              "name": "readOnly",
               "type": {
                 "text": "boolean"
               },
               "default": "false",
-              "description": "Allow Grid Pagination",
-              "fieldName": "pagination"
+              "fieldName": "readOnly"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "form-plugin-grid-js",
+          "tagName": "form-plugin-styled-input",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "NintexSampleGirdJs",
+          "name": "NintexStyledInput",
           "declaration": {
-            "name": "NintexSampleGirdJs",
-            "module": "src/components/grid-js/grid-js.ts"
+            "name": "NintexStyledInput",
+            "module": "src/components/styled-input/styled-input.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "form-plugin-grid-js",
+          "name": "form-plugin-styled-input",
           "declaration": {
-            "name": "NintexSampleGirdJs",
-            "module": "src/components/grid-js/grid-js.ts"
+            "name": "NintexStyledInput",
+            "module": "src/components/styled-input/styled-input.ts"
           }
         }
       ]
