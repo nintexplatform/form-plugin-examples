@@ -6,7 +6,7 @@ import { existsSync, readdirSync } from 'fs';
 
 /**
  * This is used to split out the individual Web components into there own js output
- * 
+ *
  * @param {*} source The base folder to start serching
  * @returns a list of file paths that indicate the exported web component
  */
@@ -39,23 +39,6 @@ export default [
         babelHelpers: 'bundled',
         extensions: ['.ts'],
         assumptions: { setPublicClassFields: true },
-        presets: [
-          [
-            '@babel/preset-env',
-            {
-              shippedProposals: true,
-              bugfixes: true,
-            },
-          ],
-          '@babel/preset-typescript',
-        ],
-        plugins: [
-          [
-            '@babel/plugin-proposal-decorators',
-            { decoratorsBeforeExport: true },
-          ],
-          ['@babel/plugin-proposal-class-properties'],
-        ],
       }),
     ],
   },

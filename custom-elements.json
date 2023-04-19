@@ -205,119 +205,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/iframe/iframe.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "NintexSampleIframe",
-          "members": [
-            {
-              "kind": "field",
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "name"
-            },
-            {
-              "kind": "field",
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "attribute": "description"
-            },
-            {
-              "kind": "field",
-              "name": "src",
-              "type": {
-                "text": "string"
-              },
-              "default": "'https://www.wikipedia.org/'",
-              "attribute": "src"
-            },
-            {
-              "kind": "field",
-              "name": "height",
-              "type": {
-                "text": "number"
-              },
-              "default": "500",
-              "attribute": "height"
-            },
-            {
-              "kind": "method",
-              "name": "getMetaConfig",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "Promise<PluginContract> | PluginContract"
-                }
-              }
-            }
-          ],
-          "attributes": [
-            {
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "name"
-            },
-            {
-              "name": "description",
-              "type": {
-                "text": "string"
-              },
-              "fieldName": "description"
-            },
-            {
-              "name": "src",
-              "type": {
-                "text": "string"
-              },
-              "default": "'https://www.wikipedia.org/'",
-              "fieldName": "src"
-            },
-            {
-              "name": "height",
-              "type": {
-                "text": "number"
-              },
-              "default": "500",
-              "fieldName": "height"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "form-plugin-iframe",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "NintexSampleIframe",
-          "declaration": {
-            "name": "NintexSampleIframe",
-            "module": "src/components/iframe/iframe.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "form-plugin-iframe",
-          "declaration": {
-            "name": "NintexSampleIframe",
-            "module": "src/components/iframe/iframe.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/chart-pie/chart-pie.data.ts",
       "declarations": [
         {
@@ -523,6 +410,119 @@
           "declaration": {
             "name": "NintexSampleGirdJs",
             "module": "src/components/grid-js/grid-js.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/iframe/iframe.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexSampleIframe",
+          "members": [
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://www.wikipedia.org/'",
+              "attribute": "src"
+            },
+            {
+              "kind": "field",
+              "name": "height",
+              "type": {
+                "text": "number"
+              },
+              "default": "500",
+              "attribute": "height"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract> | PluginContract"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "name"
+            },
+            {
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "description"
+            },
+            {
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://www.wikipedia.org/'",
+              "fieldName": "src"
+            },
+            {
+              "name": "height",
+              "type": {
+                "text": "number"
+              },
+              "default": "500",
+              "fieldName": "height"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "form-plugin-iframe",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexSampleIframe",
+          "declaration": {
+            "name": "NintexSampleIframe",
+            "module": "src/components/iframe/iframe.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "form-plugin-iframe",
+          "declaration": {
+            "name": "NintexSampleIframe",
+            "module": "src/components/iframe/iframe.ts"
           }
         }
       ]
