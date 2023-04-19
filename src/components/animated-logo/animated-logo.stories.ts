@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './animated-logo';
@@ -9,12 +9,12 @@ export default {
   component: 'motion-lit',
 } as Meta;
 
-const Template: Story<NintexSampleAnimatedLogo> = ({ word }) =>
+const Template: StoryFn<NintexSampleAnimatedLogo> = ({ word }) =>
   html` <form-plugin-animated-logo
     .word="${word}"
   ></form-plugin-animated-logo>`;
 
-export const Base: Story<NintexSampleAnimatedLogo> = Template.bind({});
+export const Base: StoryFn<NintexSampleAnimatedLogo> = Template.bind({});
 Base.args = {
   word: 'Nintex',
 };

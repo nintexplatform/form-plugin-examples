@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './iframe';
@@ -9,7 +9,7 @@ export default {
   component: 'form-plugin-iframe',
 } as Meta;
 
-const Template: Story<NintexSampleIframe> = ({ name, description, src, height }) => {
+const Template: StoryFn<NintexSampleIframe> = ({ name, description, src, height }) => {
   return html`<form-plugin-iframe
     .name=${name}
     .description=${description}
@@ -19,7 +19,7 @@ const Template: Story<NintexSampleIframe> = ({ name, description, src, height })
   </form-plugin-iframe>`;
 };
 
-export const Base: Story<NintexSampleIframe> = Template.bind({});
+export const Base: StoryFn<NintexSampleIframe> = Template.bind({});
 Base.args = {
   src: 'https://www.wikipedia.org/',
   height: 500,

@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './styled-input';
@@ -14,14 +14,14 @@ export default {
   },
 } as Meta;
 
-const Template: Story<NintexStyledInput> = ({ value, readOnly }) => {
+const Template: StoryFn<NintexStyledInput> = ({ value, readOnly }) => {
   return html` <form-plugin-styled-input
     .value="${value}"
     .readOnly="${readOnly}"
   ></form-plugin-styled-input>`;
 };
 
-export const Base: Story<NintexStyledInput> = Template.bind({});
+export const Base: StoryFn<NintexStyledInput> = Template.bind({});
 Base.args = {
   value: 'my value',
 };

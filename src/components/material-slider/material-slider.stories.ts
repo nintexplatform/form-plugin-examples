@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './material-slider';
@@ -12,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<NintexSampleSlider> = ({
+const Template: StoryFn<NintexSampleSlider> = ({
   title,
   disabled,
   min,
@@ -27,7 +27,7 @@ const Template: Story<NintexSampleSlider> = ({
 >
 </form-plugin-slider>`;
 
-export const Base: Story<NintexSampleSlider> = Template.bind({});
+export const Base: StoryFn<NintexSampleSlider> = Template.bind({});
 Base.args = {
   title: 'Example',
 };

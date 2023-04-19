@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './chart-pie';
@@ -23,11 +23,11 @@ export default {
   },
 } as Meta;
 
-const Template: Story<NintexSampleChartJs> = ({ bindings }) => html`<form-plugin-chart-js
+const Template: StoryFn<NintexSampleChartJs> = ({ bindings }) => html`<form-plugin-chart-js
   style="max-width: 400px"
   .bindings=${bindings}
 >
 </form-plugin-chart-js>`;
 
-export const Base: Story<NintexSampleChartJs> = Template.bind({});
+export const Base: StoryFn<NintexSampleChartJs> = Template.bind({});
 Base.args = {};
