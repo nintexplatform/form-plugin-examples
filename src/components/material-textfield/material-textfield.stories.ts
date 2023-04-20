@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './material-textfield';
@@ -14,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<NintexSampleTextfield> = ({
+const Template: StoryFn<NintexSampleTextfield> = ({
   title,
   description,
   outlined,
@@ -29,7 +29,7 @@ const Template: Story<NintexSampleTextfield> = ({
   </form-plugin-textfield>`;
 };
 
-export const Base: Story<NintexSampleTextfield> = Template.bind({});
+export const Base: StoryFn<NintexSampleTextfield> = Template.bind({});
 Base.args = {
   title: 'Example',
   description: 'Description of field',

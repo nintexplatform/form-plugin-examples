@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './grid-js';
@@ -9,7 +9,7 @@ export default {
   component: 'form-plugin-grid-js',
 } as Meta;
 
-const Template: Story<NintexSampleGirdJs> = ({ sortable, pagination }) => {
+const Template: StoryFn<NintexSampleGirdJs> = ({ sortable, pagination }) => {
   return html`<form-plugin-grid-js
     ?sortable=${sortable}
     ?pagination=${pagination}
@@ -17,5 +17,5 @@ const Template: Story<NintexSampleGirdJs> = ({ sortable, pagination }) => {
   </form-plugin-grid-js>`;
 };
 
-export const Base: Story<NintexSampleGirdJs> = Template.bind({});
+export const Base: StoryFn<NintexSampleGirdJs> = Template.bind({});
 Base.args = {};
